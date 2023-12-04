@@ -1,0 +1,43 @@
+@use "../abstract";
+
+/* ============== Common ============== */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: "Gordita", sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--bg-body);
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon {
+  filter: (var(--icon-color));
+}

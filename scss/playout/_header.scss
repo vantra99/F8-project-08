@@ -1,0 +1,150 @@
+@use "../abstract";
+
+/*=========== Placehoder =========*/
+%flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+/*=========== Header ============*/
+.header {
+  --heght-navbar: 50px;
+  --padding-deader: 30px;
+  --height-header: calc(var(--heght-navbar) + var(--padding-deader) * 2);
+
+  background-color: Var(--bg-header);
+  padding: var(--padding-deader);
+  @include abstract.breakpoints(lg) {
+    padding: 20px;
+  }
+  @include abstract.breakpoints(sm) {
+    padding: 15px;
+    box-shadow: 0px 20px 60px 10px var(--shadown-header);
+  }
+}
+.header-inner {
+  @extend %flexCenter;
+  @include abstract.breakpoints(xl) {
+    justify-content: space-between;
+  }
+  @include abstract.breakpoints(lg) {
+    justify-content: start;
+  }
+  @include abstract.breakpoints(sm) {
+    justify-content: space-between;
+  }
+
+  position: relative;
+
+  &__more {
+    display: none;
+    padding-top: 5px;
+    @include abstract.breakpoints(lg) {
+      display: block;
+    }
+  }
+}
+
+.navbar {
+  margin-left: 129px;
+  @include abstract.breakpoints(xl) {
+    margin-left: 0;
+  }
+  @include abstract.breakpoints(lg) {
+    display: none;
+  }
+}
+
+.navbar-list {
+  @extend %flexCenter;
+}
+
+.navbar-item {
+  &:hover .menu-dropdown {
+    display: block;
+  }
+
+  &__link {
+    @extend %flexCenter;
+    gap: 6px;
+    padding: 0 15px;
+
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.47;
+    height: var(--heght-navbar);
+  }
+  &__icon {
+    margin-top: 5px;
+  }
+  &:last-child &__link {
+    margin-right: -15px;
+  }
+}
+
+.action {
+  @extend %flexCenter;
+  @include abstract.breakpoints(xl) {
+    margin-left: 0;
+  }
+  @include abstract.breakpoints(lg) {
+    margin-left: auto;
+  }
+  @include abstract.breakpoints(sm) {
+    margin-left: 0;
+  }
+  margin-left: auto;
+  gap: 20px;
+  &__group--single {
+    @include abstract.breakpoints(lg) {
+      display: none;
+    }
+  }
+
+  &__group--single &__group--btn {
+    padding: 13px;
+  }
+
+  &__group {
+    @extend %flexCenter;
+
+    @include abstract.breakpoints(sm) {
+      display: none;
+    }
+
+    border-radius: 8px;
+    background-color: var(--bg-btn-header);
+    box-shadow: 0px 20px 60px 10px var(--bg-box-shadown-btn);
+    &--separate {
+      width: 1px;
+      height: 30px;
+      background-color: var(--color-separate-header);
+    }
+  }
+
+  &__group--btn {
+    @extend %flexCenter;
+    gap: 10px;
+    padding: 13px 20px;
+    cursor: pointer;
+
+    .action--title {
+      color: var(--text-color);
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 1.47;
+    }
+  }
+
+  &__user {
+    width: 50px;
+    height: 50px;
+    &--avarta {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+  }
+}

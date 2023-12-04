@@ -1,0 +1,100 @@
+.menu-dropdown {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-top: 54px;
+  //   display: none;
+}
+
+.dropdown-inner {
+  position: relative;
+  // width: 1240px;
+  //   width: min(1240px, 100%);
+  --height-dropdown-inner: min(
+    582px,
+    calc(100vh - var(--height-header) - 48px)
+  );
+  --padding-dropdown-inner: 30px;
+  height: var(--height-dropdown-inner);
+
+  border-radius: 20px;
+  background: var(--menu-bg-color);
+  box-shadow: 0px 40px 90px 20px var(--menu-shadown-color);
+  padding: var(--padding-dropdown-inner);
+  &::before {
+    position: absolute;
+    top: -12px;
+    left: var(--arrow-left-pos);
+    transform: translateX(-50%);
+    content: url(../icons/arrow-dropdown.svg);
+    filter: var(--arrow-dropdown-color);
+  }
+}
+
+.dropdown-column {
+  display: flex;
+  gap: 14px;
+
+  height: calc(
+    var(--height-dropdown-inner) - var(--padding-dropdown-inner) * 2
+  );
+  width: 292px;
+
+  border-right: 1px solid var(--dropdown-separate-color);
+  overflow-y: auto;
+
+  &__icon {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    &--01 {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+    }
+    &--02 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 24px;
+      height: 24px;
+      object-fit: cover;
+      filter: var(--color-cate-icons);
+    }
+  }
+  &__contents {
+    flex-grow: 1;
+    width: 212px;
+
+    .column-list {
+      .column-item__heading {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.5;
+        margin: 5px 0 26px;
+        color: var(--text-color-dropdown);
+      }
+      .column-item {
+        &__link {
+          display: block;
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 1.43;
+          padding: 7px 0;
+          color: var(--text-color-dropdown);
+          &:hover {
+            font-weight: 500;
+            color: #0071dc;
+          }
+        }
+        &:first-of-type .column-item__link {
+          padding-top: 0;
+        }
+        &:last-of-type .column-item__link {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}

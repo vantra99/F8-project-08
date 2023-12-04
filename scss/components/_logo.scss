@@ -1,0 +1,28 @@
+@use "../abstract";
+
+.logo {
+  display: flex;
+  align-items: center;
+  @include abstract.breakpoints(lg) {
+    margin-left: 10px;
+  }
+  @include abstract.breakpoints(lg) {
+    margin-left: 0;
+  }
+  gap: 14px;
+  &--title {
+    color: var(--text-color);
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.45;
+    @include abstract.breakpoints(lg) {
+      font-size: 1.8rem;
+    }
+  }
+  &--icon {
+    @include abstract.breakpoints(lg) {
+      width: 24px;
+    }
+  }
+}
