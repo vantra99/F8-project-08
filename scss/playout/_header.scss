@@ -39,11 +39,37 @@
 
   &__more {
     padding-top: 5px;
+    padding-right: 10px;
+    @include abstract.breakpoints(sm) {
+      padding-right: 0;
+    }
   }
 }
 
 .navbar {
   margin-left: 129px;
+
+  @include abstract.breakpoints(lg) {
+    transform: translateX(-100%);
+    transition: transform 0.25s linear;
+    &.show {
+      transform: translateX(0);
+    }
+    &.show ~ &__overlay {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__close {
+    display: none;
+    @include abstract.breakpoints(lg) {
+      display: block;
+      &--btn {
+        padding: 10px 0;
+      }
+    }
+  }
 
   @include abstract.breakpoints(xl) {
     margin-left: 0;
@@ -51,8 +77,9 @@
   @include abstract.breakpoints(lg) {
     position: fixed;
     inset: 0 50% 0 0;
-    background-color: #fff;
+    background-color: var(--bg-navbar-lg);
     z-index: 9;
+    padding: 30px;
   }
   &__overlay {
     visibility: hidden;
@@ -60,23 +87,32 @@
     @include abstract.breakpoints(lg) {
       position: fixed;
       inset: 0;
-      visibility: visible;
-      opacity: 1;
       background-color: rgba($color: #000000, $alpha: 0.4);
       z-index: 8;
+      transition: visibility, opacity 0.25s linear;
     }
   }
   &-list {
     @extend %flexCenter;
+    @include abstract.breakpoints(lg) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &-item {
+    width: 100%;
     &:hover .menu-dropdown {
       display: block;
     }
     &__link {
       @extend %flexCenter;
       gap: 6px;
+      @include abstract.breakpoints(lg) {
+        justify-content: space-between;
+        padding: 0;
+        height: 44px;
+      }
       padding: 0 15px;
 
       color: var(--text-color);
@@ -87,9 +123,6 @@
     }
     &__icon {
       margin-top: 5px;
-    }
-    &:last-child &__link {
-      margin-right: -15px;
     }
   }
 }

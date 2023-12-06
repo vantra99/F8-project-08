@@ -1,7 +1,10 @@
 <div class="container">
   <header class="header-inner">
     <!-- more -->
-    <button class="icon header-inner__more d-none d-lg-block">
+    <button
+      class="icon header-inner__more d-none d-lg-block js-toggle"
+      toggle-target="#navbar"
+    >
       <img src="./assets/icons/more.svg" alt="icon-more" class="more--icon" />
     </button>
     <!-- logo -->
@@ -10,7 +13,14 @@
       <h1 class="logo--title">grocerymart</h1>
     </a>
     <!-- navbar -->
-    <nav class="navbar">
+    <nav id="navbar" class="navbar hide">
+      <button class="navbar__close icon js-toggle" toggle-target="#navbar">
+        <img
+          src="./assets/icons/arrow-left.svg"
+          alt="icon"
+          class="navbar__close--btn"
+        />
+      </button>
       <ul class="navbar-list js-dropdown-list">
         <li class="navbar-item">
           <a href="#!" class="navbar-item__link">
@@ -22,7 +32,7 @@
             />
           </a>
           <!-- menu-dropdown-01 -->
-          <div class="menu-dropdown">
+          <div class="menu-dropdown d-lg-none">
             <div class="dropdown-inner">
               <div class="dropdown-column">
                 <div class="dropdown-column__icon">
@@ -1046,7 +1056,7 @@
             />
           </a>
           <!-- menu-dropdown-02 -->
-          <div class="menu-dropdown">
+          <div class="menu-dropdown d-lg-none">
             <div class="dropdown-inner">
               <!-- sub-menu -->
               <div class="sub-menu sub-menu__not-main">
@@ -1441,7 +1451,7 @@
             />
           </a>
           <!-- menu-dropdown-03 -->
-          <div class="menu-dropdown">
+          <div class="menu-dropdown d-lg-none">
             <div class="dropdown-inner">
               <!-- sub-menu -->
               <div class="sub-menu sub-menu__not-main">
@@ -1757,7 +1767,7 @@
         </li>
       </ul>
     </nav>
-    <div class="navbar__overlay"></div>
+    <div class="navbar__overlay js-toggle" toggle-target="#navbar"></div>
     <!-- action -->
     <div class="action">
       <div class="action__group action__group--single d-lg-none">
