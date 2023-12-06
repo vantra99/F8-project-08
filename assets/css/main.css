@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -1286,6 +1287,93 @@ a {
   }
 }
 /*========= Base ==========*/
+/*======== Bộ Class làm việc vối Display ========*/
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.d-grid {
+  display: grid !important;
+}
+
+@media (max-width: 1399.98px) {
+  .d-xxl-none {
+    display: none !important;
+  }
+  .d-xxl-block {
+    display: block !important;
+  }
+  .d-xxl-flex {
+    display: flex !important;
+  }
+  .d-xxl-grid {
+    display: grid !important;
+  }
+}
+@media (max-width: 1199.98px) {
+  .d-xl-none {
+    display: none !important;
+  }
+  .d-xl-block {
+    display: block !important;
+  }
+  .d-xl-flex {
+    display: flex !important;
+  }
+  .d-xl-grid {
+    display: grid !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .d-lg-none {
+    display: none !important;
+  }
+  .d-lg-block {
+    display: block !important;
+  }
+  .d-lg-flex {
+    display: flex !important;
+  }
+  .d-lg-grid {
+    display: grid !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .d-md-none {
+    display: none !important;
+  }
+  .d-md-block {
+    display: block !important;
+  }
+  .d-md-flex {
+    display: flex !important;
+  }
+  .d-md-grid {
+    display: grid !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .d-sm-none {
+    display: none !important;
+  }
+  .d-sm-block {
+    display: block !important;
+  }
+  .d-sm-flex {
+    display: flex !important;
+  }
+  .d-sm-grid {
+    display: grid !important;
+  }
+}
 html.light {
   --text-color: #1a162e;
   --icon-color: brightness(0) saturate(100%) invert(10%) sepia(47%)
@@ -1341,10 +1429,10 @@ html.dark {
 /*=========== Header ============*/
 .header {
   --heght-navbar: 50px;
-  --padding-deader: 30px;
-  --height-header: calc(var(--heght-navbar) + var(--padding-deader) * 2);
+  --padding-header: 30px;
+  --height-header: calc(var(--heght-navbar) + var(--padding-header) * 2);
   background-color: Var(--bg-header);
-  padding: var(--padding-deader);
+  padding: var(--padding-header);
 }
 @media (max-width: 991.98px) {
   .header {
@@ -1377,13 +1465,7 @@ html.dark {
   }
 }
 .header-inner__more {
-  display: none;
   padding-top: 5px;
-}
-@media (max-width: 991.98px) {
-  .header-inner__more {
-    display: block;
-  }
 }
 
 .navbar {
@@ -1396,10 +1478,26 @@ html.dark {
 }
 @media (max-width: 991.98px) {
   .navbar {
-    display: none;
+    position: fixed;
+    inset: 0 50% 0 0;
+    background-color: #fff;
+    z-index: 9;
   }
 }
-
+.navbar__overlay {
+  visibility: hidden;
+  opacity: 0;
+}
+@media (max-width: 991.98px) {
+  .navbar__overlay {
+    position: fixed;
+    inset: 0;
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 8;
+  }
+}
 .navbar-item:hover .menu-dropdown {
   display: block;
 }
@@ -1438,11 +1536,6 @@ html.dark {
     margin-left: 0;
   }
 }
-@media (max-width: 991.98px) {
-  .action__group--single {
-    display: none;
-  }
-}
 .action__group--single .action__group--btn {
   padding: 13px;
 }
@@ -1450,11 +1543,6 @@ html.dark {
   border-radius: 8px;
   background-color: var(--bg-btn-header);
   box-shadow: 0px 20px 60px 10px var(--bg-box-shadown-btn);
-}
-@media (max-width: 575.98px) {
-  .action__group {
-    display: none;
-  }
 }
 .action__group--separate {
   width: 1px;
@@ -1521,10 +1609,12 @@ html.dark {
   left: 0;
   right: 0;
   padding-top: 54px;
+  display: none;
 }
 
 .dropdown-inner {
   position: relative;
+  width: min(1240px, 100%);
   --height-dropdown-inner: min(
     582px,
     calc(100vh - var(--height-header) - 48px)
@@ -1559,10 +1649,15 @@ html.dark {
   height: 36px;
   flex-shrink: 0;
 }
+@media (max-width: 1199.98px) {
+  .dropdown-column__icon {
+    display: none;
+  }
+}
 .dropdown-column__icon--01 {
   width: 30px;
   height: 30px;
-  object-fit: cover;
+  object-fit: contain;
 }
 .dropdown-column__icon--02 {
   position: absolute;
@@ -1570,7 +1665,7 @@ html.dark {
   bottom: 0;
   width: 24px;
   height: 24px;
-  object-fit: cover;
+  object-fit: contain;
   filter: var(--color-cate-icons);
 }
 .dropdown-column__contents {
@@ -1584,6 +1679,13 @@ html.dark {
   margin: 5px 0 26px;
   color: var(--text-color-dropdown);
 }
+.dropdown-column__contents .column-list .column__item--active .column-item__link {
+  font-weight: 500;
+  color: #0071dc;
+}
+.dropdown-column__contents .column-list .column__item--active .sub-menu {
+  display: grid;
+}
 .dropdown-column__contents .column-list .column-item__link {
   display: block;
   font-size: 1.4rem;
@@ -1592,15 +1694,72 @@ html.dark {
   padding: 7px 0;
   color: var(--text-color-dropdown);
 }
-.dropdown-column__contents .column-list .column-item__link:hover {
-  font-weight: 500;
-  color: #0071dc;
-}
 .dropdown-column__contents .column-list .column-item:first-of-type .column-item__link {
   padding-top: 0;
 }
 .dropdown-column__contents .column-list .column-item:last-of-type .column-item__link {
   padding-bottom: 0;
+}
+
+.sub-menu {
+  position: absolute;
+  inset: 30px 30px 30px 322px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: auto;
+  padding-left: 30px;
+  overflow-y: auto;
+}
+@media (max-width: 1199.98px) {
+  .sub-menu .dropdown-column__icon {
+    display: none;
+  }
+}
+@media (max-width: 1199.98px) {
+  .sub-menu {
+    column-gap: 30px;
+  }
+}
+.sub-menu__column--inner {
+  display: flex;
+  gap: 14px;
+}
+.sub-menu__column--inner + .sub-menu__column--inner {
+  margin-top: 30px;
+}
+.sub-menu .sub-menu__list .sub-menu__heading {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 5px 0 26px;
+  color: var(--text-color-dropdown);
+}
+.sub-menu .sub-menu__list .sub-menu__item--link {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.43;
+  padding: 7px 0;
+  color: var(--text-color-dropdown);
+}
+.sub-menu .sub-menu__list .sub-menu__item--link:hover {
+  font-weight: 500;
+  color: #0071dc;
+}
+.sub-menu .sub-menu__list .sub-menu__item:first-of-type .sub-menu__item--link {
+  padding-top: 0;
+}
+.sub-menu .sub-menu__list .sub-menu__item:last-of-type .sub-menu__item--link {
+  padding-bottom: 0;
+}
+
+.sub-menu__not-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  inset: initial;
+  padding-left: 0;
+  height: calc(var(--height-dropdown-inner) - var(--padding-dropdown-inner) * 2);
+  width: calc(min(1240px, 100%) - var(--padding-dropdown-inner) * 2);
 }
 
 /*# sourceMappingURL=main.css.map */
