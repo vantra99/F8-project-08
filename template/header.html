@@ -14,13 +14,37 @@
     </a>
     <!-- navbar -->
     <nav id="navbar" class="navbar hide">
-      <button class="navbar__close icon js-toggle" toggle-target="#navbar">
+      <!-- navbar-close -->
+      <button
+        class="icon navbar__close d-lg-block js-toggle"
+        toggle-target="#navbar"
+      >
         <img
           src="./assets/icons/arrow-left.svg"
           alt="icon"
           class="navbar__close--btn"
         />
       </button>
+      <!-- navbar-btn -->
+      <a href="#!" class="navbar__btn d-none d-sm-flex">
+        <img
+          src="../assets/icons/cart.svg"
+          alt="icon"
+          class="icon navbar__btn--icon"
+        />
+        <span class="navbar__btn--title">Card</span>
+        <span class="navbar__btn--number">3</span>
+      </a>
+      <a href="#!" class="navbar__btn d-none d-sm-flex">
+        <img
+          src="../assets/icons/heart.svg"
+          alt="icon"
+          class="icon navbar__btn--icon"
+        />
+        <span class="navbar__btn--title">Card</span>
+        <span class="navbar__btn--number">3</span>
+      </a>
+      <!-- navbar-list -->
       <ul class="navbar-list js-dropdown-list">
         <li class="navbar-item">
           <a href="#!" class="navbar-item__link">
@@ -32,7 +56,7 @@
             />
           </a>
           <!-- menu-dropdown-01 -->
-          <div class="menu-dropdown d-lg-none">
+          <div class="menu-dropdown">
             <div class="dropdown-inner">
               <div class="dropdown-column">
                 <div class="dropdown-column__icon">
@@ -49,7 +73,9 @@
                 </div>
                 <div class="dropdown-column__contents">
                   <ul class="column-list js-menu-list">
-                    <h2 class="column-item__heading">All Departments</h2>
+                    <h2 class="column-item__heading d-lg-none">
+                      All Departments
+                    </h2>
                     <li class="column-item">
                       <a href="#!" class="column-item__link"
                         >Savings & Featured Shops</a
@@ -1056,7 +1082,7 @@
             />
           </a>
           <!-- menu-dropdown-02 -->
-          <div class="menu-dropdown d-lg-none">
+          <div class="menu-dropdown">
             <div class="dropdown-inner">
               <!-- sub-menu -->
               <div class="sub-menu sub-menu__not-main">
@@ -1451,7 +1477,7 @@
             />
           </a>
           <!-- menu-dropdown-03 -->
-          <div class="menu-dropdown d-lg-none">
+          <div class="menu-dropdown">
             <div class="dropdown-inner">
               <!-- sub-menu -->
               <div class="sub-menu sub-menu__not-main">

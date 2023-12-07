@@ -6,6 +6,13 @@
   right: 0;
   padding-top: 54px;
   display: none;
+  @include abstract.breakpoints(lg) {
+    position: initial;
+    padding-top: 0;
+  }
+  @include abstract.breakpoints(sm) {
+    margin-top: 10px;
+  }
 }
 
 .dropdown-inner {
@@ -31,6 +38,17 @@
     content: url(../icons/arrow-dropdown.svg);
     filter: var(--arrow-dropdown-color);
   }
+  @include abstract.breakpoints(lg) {
+    height: auto;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    overflow-y: auto;
+    &::before {
+      content: none;
+    }
+  }
 }
 
 .dropdown-column {
@@ -42,6 +60,11 @@
   width: 292px;
   border-right: 1px solid var(--dropdown-separate-color);
   overflow-y: auto;
+  @include abstract.breakpoints(lg) {
+    border: none;
+    height: 100%;
+    width: 100%;
+  }
 
   &__icon {
     position: relative;
@@ -115,16 +138,25 @@
   grid-template-columns: repeat(3, 1fr);
   column-gap: auto;
   padding-left: 30px;
+  overflow-y: auto;
   .dropdown-column__icon {
     @include abstract.breakpoints(xl) {
       display: none;
+    }
+    @include abstract.breakpoints(lg) {
+      display: block;
     }
   }
   @include abstract.breakpoints(xl) {
     column-gap: 30px;
   }
+  @include abstract.breakpoints(lg) {
+    position: initial;
+    inset: initial;
+    padding-left: 0;
+    grid-template-columns: 1fr;
+  }
 
-  overflow-y: auto;
   &__column {
     &--inner {
       & + & {
@@ -174,4 +206,9 @@
     var(--height-dropdown-inner) - var(--padding-dropdown-inner) * 2
   );
   width: calc(min(1240px, 100%) - var(--padding-dropdown-inner) * 2);
+  @include abstract.breakpoints(lg) {
+    grid-template-columns: 1fr;
+    height: auto;
+    width: 100%;
+  }
 }
