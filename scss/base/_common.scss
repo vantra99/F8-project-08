@@ -20,6 +20,7 @@ body {
   font-family: "Gordita", sans-serif;
   font-size: 1.6rem;
   background-color: var(--bg-body);
+  color: var(--text-color);
 }
 
 input,
@@ -28,6 +29,7 @@ textarea,
 select {
   font-family: inherit;
   font-size: inherit;
+  color: inherit;
 }
 
 button {

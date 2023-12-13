@@ -48,6 +48,7 @@
 
 .navbar {
   margin-left: 129px;
+  z-index: 9;
 
   @include abstract.breakpoints(xl) {
     margin-left: 0;
@@ -74,15 +75,19 @@
 
   @include abstract.breakpoints(sm) {
     inset: 0 10% 0 0;
-    padding: 20px;
+    padding: 20px 0;
   }
 
   &__close {
     display: none;
     @include abstract.breakpoints(lg) {
+      filter: var(--icon-sidebar-dark);
       &--btn {
         padding: 10px 0;
       }
+    }
+    @include abstract.breakpoints(sm) {
+      padding: 0 20px;
     }
   }
 
@@ -90,8 +95,12 @@
     @include abstract.breakpoints(sm) {
       align-items: center;
       height: 42px;
+      padding: 0 20px;
+      &--icon {
+        filter: var(--icon-sidebar-dark);
+      }
       &--title {
-        color: var(--text-color);
+        color: var(--text-color-dropdown);
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 1.47;
@@ -121,11 +130,12 @@
     @include abstract.breakpoints(lg) {
       flex-direction: column;
       align-items: flex-start;
-      height: calc(100% - 20px);
+      height: calc(100% - 40px);
       overflow-y: auto;
     }
     @include abstract.breakpoints(sm) {
       height: calc(100% - 130px);
+      padding: 0 20px;
     }
   }
 
@@ -158,6 +168,8 @@
       height: var(--heght-navbar);
       @include abstract.breakpoints(lg) {
         justify-content: space-between;
+        color: var(--text-color-dropdown);
+
         padding: 0;
         height: 44px;
         font-size: 1.8rem;
@@ -169,6 +181,7 @@
     &__icon {
       margin-top: 5px;
       @include abstract.breakpoints(lg) {
+        filter: var(--icon-sidebar-dark);
         margin-right: 10px;
         rotate: -90deg;
       }

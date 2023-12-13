@@ -1,6 +1,7 @@
 @use "../abstract";
 
 html.light {
+  --text-color-title-cate: #000;
   --text-color: #1a162e;
   --icon-color: brightness(0) saturate(100%) invert(10%) sepia(47%)
     saturate(587%) hue-rotate(210deg) brightness(95%) contrast(102%);
@@ -21,4 +22,25 @@ html.light {
   --arrow-dropdown-color: #fff;
   --dropdown-separate-color: #d2d1d6;
   --bg-navbar-lg: #fff;
+  --text-color-dropdown: #1a162e;
+
+  // Browse Categories
+  --bg-categoty-item: #eee;
+  --bg-categoty-item-sm: #fff;
+  --bg-category-photo: #fff;
+
+  // button
+  --color-text-filter: #6c6c72;
+
+  // product
+  --bg-product-item: #fff;
+  --bg-product-heart: #fff;
+  --shadow-product-item: rgba(237, 237, 246, 0.2);
+
+  // filter
+  --bg-filter: #fff;
+  --shadow-filter: rgba(200, 200, 200, 0.4);
+  --bg-circle-rate: #ffff;
+  --bg-tag: #f8f8fb;
+  --color-tag-hover: #1a162e;
 }

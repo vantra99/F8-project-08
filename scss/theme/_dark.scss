@@ -1,6 +1,7 @@
 @use "../abstract";
 
 html.dark {
+  --text-color-title-cate: #fff;
   --text-color: #fff;
   --icon-color: brightness(0) saturate(100%) invert(100%) sepia(13%)
     saturate(7484%) hue-rotate(292deg) brightness(130%) contrast(88%);
@@ -12,6 +13,7 @@ html.dark {
   @include abstract.breakpoints(sm) {
     --shadown-header: rgba(0, 0, 0, 0.2);
   }
+
   // menu-dropdown
   --menu-bg-color: #363d4b;
   --menu-shadown-color: rgba(23, 28, 40, 0.4);
@@ -22,4 +24,30 @@ html.dark {
     saturate(32%) hue-rotate(225deg) brightness(105%) contrast(100%);
   --text-color-dropdown: #b9babe;
   --bg-navbar-lg: #292e39;
+
+  // Side-bar
+  --icon-sidebar-dark: brightness(0) saturate(100%) invert(100%) sepia(0%)
+    saturate(6230%) hue-rotate(266deg) brightness(75%) contrast(92%);
+
+  // Browse Categories
+  --bg-categoty-item: #171c28;
+  --bg-categoty-item-sm: #171c28;
+  --bg-category-photo: #292e39;
+
+  //button
+  --color-text-filter: #fff;
+
+  // product
+  --bg-product-item: #171c28;
+  --bg-product-heart: #292e39;
+  --shadow-product-item: rgba(0, 0, 0, 0.2);
+
+  // filter
+  --bg-filter: #292e39;
+  --bg-arrow-filter: brightness(0) saturate(100%) invert(15%) sepia(7%)
+    saturate(1661%) hue-rotate(183deg) brightness(96%) contrast(91%);
+  --shadow-filter: rgba(0, 0, 0, 0.4);
+  --bg-circle-rate: #292e39;
+  --bg-tag: #171c28;
+  --color-tag-hover: #fff;
 }
