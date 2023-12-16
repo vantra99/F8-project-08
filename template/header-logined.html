@@ -1796,10 +1796,45 @@
     <div class="navbar__overlay js-toggle" toggle-target="#navbar"></div>
     <!-- action -->
     <div class="action">
-      <a href="./sign-in.html" class="btn btn--text btn--signIn d-sm-none"
-        >Sign In</a
-      >
-      <a href="./sign-up.html" class="btn btn--primary btn--signUp">Sign Up</a>
+      <div class="action__group action__group--single d-md-none">
+        <button class="action__group--btn">
+          <img
+            src="./assets/icons/search.svg"
+            alt="icon"
+            class="icon action--icon"
+          />
+        </button>
+      </div>
+
+      <div class="action__group d-sm-none">
+        <button class="action__group--btn">
+          <img
+            src="./assets/icons/heart.svg"
+            alt="icon"
+            class="icon action--icon"
+          />
+          <span class="action--title">03</span>
+        </button>
+
+        <div class="action__group--separate"></div>
+
+        <button class="action__group--btn">
+          <img
+            src="./assets/icons/cart.svg"
+            alt="icon"
+            class="icon action--icon"
+          />
+          <span class="action--title">$65.42</span>
+        </button>
+      </div>
+
+      <div class="action__user">
+        <img
+          src="./assets/img/user-avarta.jpg"
+          alt=""
+          class="action__user--avarta"
+        />
+      </div>
     </div>
   </header>
 </div>

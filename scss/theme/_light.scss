@@ -31,6 +31,7 @@ html.light {
 
   // button
   --color-text-filter: #6c6c72;
+  --color-text-btn-outline: #1a162e;
 
   // product
   --bg-product-item: #fff;
@@ -43,4 +44,13 @@ html.light {
   --bg-circle-rate: #ffff;
   --bg-tag: #f8f8fb;
   --color-tag-hover: #1a162e;
+
+  // sign-up
+  --bg-intro: #eee;
+  --bg-sign-up: #fff;
+  --bg-color-warning-input: #fdeceb;
+  --bg-intro-tablet-moblie: #fff;
+  --text-color-signUp-primary: #1a162e;
+  --color-text-label-checkbox: #9e9da8;
+  --color-placeholder-input-signup: #d2d1d6;
 }

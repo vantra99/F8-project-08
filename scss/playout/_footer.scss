@@ -1,0 +1,145 @@
+@use "../abstract";
+.footer {
+  background-color: var(--bg-header);
+  &__inner {
+    padding: 50px 0;
+    font-size: 1.4rem;
+  }
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 30px;
+    @include abstract.breakpoints(lg) {
+      flex-direction: column;
+    }
+  }
+  &__sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    @include abstract.breakpoints(md) {
+      justify-content: center;
+    }
+  }
+  &__col {
+    max-width: min(300px, 100%);
+    line-height: 1.5;
+    @include abstract.breakpoints(xl) {
+      max-width: min(200px, 100%);
+    }
+    @include abstract.breakpoints(lg) {
+      max-width: min(400px, 100%);
+    }
+    @include abstract.breakpoints(md) {
+      max-width: 100%;
+    }
+  }
+  &__col--desc {
+    margin-top: 30px;
+    text-align: justify;
+  }
+  &__col--heading {
+    font-weight: 900;
+    font-size: 1.8rem;
+  }
+  &__col--form {
+    margin-top: 40px;
+    input[type="email"] {
+      padding: 8px 12px;
+      border: 2px solid #d2d1d6;
+      border-radius: 6px;
+      width: 100%;
+      outline: none;
+      font-weight: 500;
+      font-size: 1.6rem;
+      &::placeholder {
+        font-weight: 400;
+        color: #9e9da8;
+      }
+    }
+    .form__submit {
+      display: flex;
+      gap: 10px;
+      padding: 16px 0;
+      @include abstract.breakpoints(xl) {
+        flex-wrap: wrap;
+      }
+      @include abstract.breakpoints(lg) {
+        flex-wrap: nowrap;
+      }
+    }
+    .form__btn {
+      width: 50%;
+      font-size: 1.6rem;
+      @include abstract.breakpoints(xl) {
+        width: 100%;
+      }
+      @include abstract.breakpoints(lg) {
+        width: 50%;
+      }
+    }
+  }
+  &__col--list {
+    margin-top: 30px;
+  }
+  &__col--item--link,
+  &__col__group--desc {
+    display: block;
+    padding: 8px 0;
+    color: inherit;
+    transition: color 0.2s;
+    &:hover {
+      color: blue;
+    }
+  }
+  &__col__group {
+    & + & {
+      margin-top: 20px;
+    }
+  }
+  &__col--name {
+    display: block;
+  }
+  &__col--address,
+  &__col--hours {
+    &:hover {
+      color: inherit;
+    }
+  }
+  &__social {
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    column-gap: 20px;
+  }
+  &__social--link {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 8px;
+    transition: transform, filter 0.3s;
+    &:hover {
+      transform: translateY(-3px);
+      filter: brightness(1.5);
+    }
+    &.bg-facebook {
+      background-color: #556386;
+    }
+    &.bg-youtube {
+      background-color: #9b1b1b;
+    }
+    &.bg-tiktok {
+      background-color: #000;
+    }
+    &.bg-twitter {
+      background-color: #6b93ba;
+    }
+    &.bg-linkedin {
+      background-color: #4b6c89;
+    }
+  }
+  &__social--photo {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(6%) saturate(507%)
+      hue-rotate(218deg) brightness(115%) contrast(87%);
+  }
+}

@@ -244,4 +244,12 @@
       object-fit: cover;
     }
   }
+  .btn--signIn,
+  .btn--signUp {
+    font-size: 1.6rem;
+    padding: 10px 20px;
+    @include abstract.breakpoints(md) {
+      padding: 5px 15px;
+    }
+  }
 }
