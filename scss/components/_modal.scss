@@ -1,0 +1,71 @@
+@use "../abstract";
+.modal {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity, visibility linear;
+  transition-duration: 0.2s;
+  &.show {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.modal-content {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+
+  width: min(350px, 100%);
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--bg-modal);
+  z-index: 99;
+
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  @include abstract.breakpoints(sm) {
+    width: 80%;
+  }
+  &__button {
+    display: flex;
+    column-gap: 15px;
+    align-self: flex-end;
+    margin-top: auto;
+    @include abstract.breakpoints(sm) {
+      display: flex;
+      justify-content: space-between;
+      align-self: initial;
+    }
+  }
+  &--btn {
+    padding: 0px 20px;
+    border-radius: 5px;
+    height: 46px;
+    font-size: 1.8rem;
+    @include abstract.breakpoints(sm) {
+      flex: 1 1;
+    }
+  }
+  &--close {
+    border-color: #d2d1d6;
+  }
+  &--confirm {
+    background-color: #ed4337;
+    color: #fff;
+    font-weight: 500;
+  }
+}
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 98;
+  background-color: rgba(0, 0, 0, 0.5);
+}

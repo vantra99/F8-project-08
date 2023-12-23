@@ -26,9 +26,9 @@
         />
       </button>
       <!-- navbar-btn -->
-      <a href="#!" class="navbar__btn d-none d-sm-flex">
+      <a href="./check-out.html" class="navbar__btn d-none d-sm-flex">
         <img
-          src="../assets/icons/cart.svg"
+          src="./assets/icons/cart.svg"
           alt="icon"
           class="navbar__btn--icon"
         />
@@ -37,7 +37,7 @@
       </a>
       <a href="#!" class="navbar__btn d-none d-sm-flex">
         <img
-          src="../assets/icons/heart.svg"
+          src="./assets/icons/heart.svg"
           alt="icon"
           class="navbar__btn--icon"
         />
@@ -72,10 +72,10 @@
                   />
                 </div>
                 <div class="dropdown-column__contents">
+                  <h2 class="dropdown-column__heading d-lg-none">
+                    All Departments
+                  </h2>
                   <ul class="column-list js-menu-list">
-                    <h2 class="column-item__heading d-lg-none">
-                      All Departments
-                    </h2>
                     <li class="column-item">
                       <a href="#!" class="column-item__link"
                         >Savings & Featured Shops</a
@@ -1806,26 +1806,200 @@
         </button>
       </div>
 
-      <div class="action__group d-sm-none">
-        <button class="action__group--btn">
-          <img
-            src="./assets/icons/heart.svg"
-            alt="icon"
-            class="icon action--icon"
-          />
-          <span class="action--title">03</span>
-        </button>
+      <div class="action__group d-sm-none js-action-dropdown">
+        <div class="action__group--btn__wrap">
+          <button class="action__group--btn">
+            <img
+              src="./assets/icons/heart.svg"
+              alt="icon"
+              class="icon action--icon"
+            />
+            <span class="action--title">03</span>
+          </button>
+          <!-- action-dropdown -->
+          <div class="action-dropdown action-dropdown__favourite">
+            <div class="action-dropdown__inner">
+              <img
+                src="./assets/icons/arrow-dropdown.svg"
+                alt="icon"
+                class="action-dropdown__arrow action-dropdown__arrow__favourite"
+              />
+              <div class="action-dropdown__top">
+                <h2 class="action-dropdown__title">You have 3 item</h2>
+                <a href="./check-out.html" class="action-dropdown__view-all"
+                  >See All</a
+                >
+              </div>
+
+              <div class="row row-cols-3">
+                <!-- action-card-01 -->
+                <div class="col">
+                  <div class="action-dropdown__card">
+                    <figure class="action-dropdown__card__photo">
+                      <img
+                        src="./assets/img/product-item/pro-01.png"
+                        alt="card-photo"
+                      />
+                    </figure>
+                    <h3 class="action-dropdown__card__title">
+                      Lavazza Coffee Blends
+                    </h3>
+                    <span class="action-dropdown__card__price">$329.00</span>
+                  </div>
+                </div>
+                <!-- action-card-02 -->
+                <div class="col">
+                  <div class="action-dropdown__card">
+                    <figure class="action-dropdown__card__photo">
+                      <img
+                        src="./assets/img/product-item/pro-02.png"
+                        alt="card-photo"
+                      />
+                    </figure>
+                    <h3 class="action-dropdown__card__title">
+                      Coffee Beans Espresso
+                    </h3>
+                    <span class="action-dropdown__card__price">$39.99</span>
+                  </div>
+                </div>
+                <!-- action-card-03 -->
+                <div class="col">
+                  <div class="action-dropdown__card">
+                    <figure class="action-dropdown__card__photo">
+                      <img
+                        src="./assets/img/product-item/pro-03.png"
+                        alt="card-photo"
+                      />
+                    </figure>
+                    <h3 class="action-dropdown__card__title">
+                      Qualità Oro Mountain
+                    </h3>
+                    <span class="action-dropdown__card__price">$47.00</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="action-dropdown__separate"></div>
+
+              <div class="action-dropdown__check-out">
+                <a
+                  href="./check-out.html"
+                  class="btn btn--primary action-dropdown__check-out--btn"
+                  >Check Out All</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="action__group--separate"></div>
+        <div class="action__group--btn__wrap">
+          <button class="action__group--btn">
+            <img
+              src="./assets/icons/cart.svg"
+              alt="icon"
+              class="icon action--icon"
+            />
+            <span class="action--title">$65.42</span>
+          </button>
+          <!-- action-dropdown -->
+          <div class="action-dropdown">
+            <div class="action-dropdown__inner">
+              <img
+                src="./assets/icons/arrow-dropdown.svg"
+                alt="icon"
+                class="action-dropdown__arrow"
+              />
+              <div class="action-dropdown__top">
+                <h2 class="action-dropdown__title">You have 3 item</h2>
+                <a href="./check-out.html" class="action-dropdown__view-all"
+                  >See All</a
+                >
+              </div>
 
-        <button class="action__group--btn">
-          <img
-            src="./assets/icons/cart.svg"
-            alt="icon"
-            class="icon action--icon"
-          />
-          <span class="action--title">$65.42</span>
-        </button>
+              <div class="row row-cols-3">
+                <!-- action-card-01 -->
+                <div class="col">
+                  <div class="action-dropdown__card">
+                    <figure class="action-dropdown__card__photo">
+                      <img
+                        src="./assets/img/product-item/pro-01.png"
+                        alt="card-photo"
+                      />
+                    </figure>
+                    <h3 class="action-dropdown__card__title">
+                      Lavazza Coffee Blends
+                    </h3>
+                    <span class="action-dropdown__card__price">$329.00</span>
+                  </div>
+                </div>
+                <!-- action-card-02 -->
+                <div class="col">
+                  <div class="action-dropdown__card">
+                    <figure class="action-dropdown__card__photo">
+                      <img
+                        src="./assets/img/product-item/pro-02.png"
+                        alt="card-photo"
+                      />
+                    </figure>
+                    <h3 class="action-dropdown__card__title">
+                      Coffee Beans Espresso
+                    </h3>
+                    <span class="action-dropdown__card__price">$39.99</span>
+                  </div>
+                </div>
+                <!-- action-card-03 -->
+                <div class="col">
+                  <div class="action-dropdown__card">
+                    <figure class="action-dropdown__card__photo">
+                      <img
+                        src="./assets/img/product-item/pro-03.png"
+                        alt="card-photo"
+                      />
+                    </figure>
+                    <h3 class="action-dropdown__card__title">
+                      Qualità Oro Mountain
+                    </h3>
+                    <span class="action-dropdown__card__price">$47.00</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="action-dropdown__separate"></div>
+
+              <div class="action-dropdown__bottom">
+                <div class="action-dropdown__group">
+                  <span class="action-dropdown__item">Subtotal</span>
+                  <span class="action-dropdown__item">$415.99</span>
+                </div>
+                <div class="action-dropdown__group">
+                  <span class="action-dropdown__item">Texes</span>
+                  <span class="action-dropdown__item">Free</span>
+                </div>
+                <div class="action-dropdown__group">
+                  <span class="action-dropdown__item">Shipping</span>
+                  <span class="action-dropdown__item">$10.00</span>
+                </div>
+                <div
+                  class="action-dropdown__group action-dropdown__group--total"
+                >
+                  <span class="action-dropdown__item">Total Price</span>
+                  <span class="action-dropdown__item">$425.99</span>
+                </div>
+              </div>
+
+              <div class="action-dropdown__separate"></div>
+
+              <div class="action-dropdown__check-out">
+                <a
+                  href="./check-out.html"
+                  class="btn btn--primary action-dropdown__check-out--btn"
+                  >Check Out All</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="action__user">

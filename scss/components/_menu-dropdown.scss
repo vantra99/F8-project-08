@@ -90,17 +90,18 @@
     }
   }
 
+  &__heading {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 5px 0 26px;
+    color: var(--text-color-dropdown);
+  }
+
   &__contents {
     flex-grow: 1;
     width: 212px;
     .column-list {
-      .column-item__heading {
-        font-size: 1.6rem;
-        font-weight: 500;
-        line-height: 1.5;
-        margin: 5px 0 26px;
-        color: var(--text-color-dropdown);
-      }
       .column__item--active {
         .column-item__link {
           font-weight: 500;

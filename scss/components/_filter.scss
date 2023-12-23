@@ -1,11 +1,5 @@
 @use "../abstract";
 
-%textInput {
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.43;
-}
-
 .filter {
   position: absolute;
   right: 0;
@@ -61,127 +55,16 @@
       max-height: calc(100vh - 200px);
     }
   }
+  &__col {
+    flex-basis: 0;
+  }
   &__heading {
     font-size: 2.2rem;
     font-weight: 500;
     line-height: 1.45;
     margin-bottom: 30px;
   }
-  &__label {
-    display: block;
-    font-size: 2.2rem;
-    font-weight: 500;
-    line-height: 1.45;
-    &--small {
-      margin-bottom: 10px;
-      font-size: 1.4rem;
-      font-weight: 500;
-      line-height: 1.43;
-    }
-  }
-  &__group {
-    display: flex;
-    column-gap: 30px;
-    margin-top: 20px;
-  }
-  &__group__inner {
-    display: flex;
-    column-gap: 14px;
-    height: 45px;
-    padding: 5px 14px;
-    border: 1px solid #d2d1d6;
-    border-radius: 6px;
-    &--item {
-      display: flex;
-      align-items: center;
-      cursor: pointer;
 
-      &:first-child {
-        width: 129px;
-        @include abstract.breakpoints(xl) {
-          width: 100%;
-        }
-      }
-      &:last-child {
-        width: 80px;
-        @include abstract.breakpoints(xl) {
-          width: 100%;
-        }
-      }
-    }
-  }
-  &__group__brand {
-    padding: 10px 16px;
-    border-radius: 6px;
-    border: 1px solid #d2d1d6;
-    width: max(302px, 100%);
-    &--search {
-      display: flex;
-      align-items: center;
-    }
-    &--input {
-      font-weight: 500;
-      &::placeholder {
-        font-size: 1.5rem;
-        font-weight: 400;
-        line-height: 1.47;
-        color: inherit;
-      }
-    }
-    img {
-      margin-left: 16px;
-    }
-  }
-  &__input__select {
-    outline: none;
-    border: none;
-    background-color: transparent;
-    width: 100%;
-    // text
-    @extend %textInput;
-    font-size: 1.6rem;
-  }
-  &__input {
-    width: 121px;
-    padding: 8px 12px;
-    border: 1px solid #d2d1d6;
-    border-radius: 6px;
-    background-color: transparent;
-    // text
-    @extend %textInput;
-    font-size: 1.6rem;
-    outline: none;
-    @include abstract.breakpoints(xl) {
-      width: 100%;
-    }
-  }
-  &__group--rate {
-    position: relative;
-    width: 272px;
-    height: 2px;
-    background-color: #d2d1d6;
-    @include abstract.breakpoints(xl) {
-      width: 100%;
-    }
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      border: 6px solid #ffb700;
-      background-color: var(--bg-circle-rate);
-    }
-    &::before {
-      left: var(--min-value);
-    }
-    &::after {
-      left: var(--max-value);
-    }
-  }
   &__saperate {
     width: 1px;
     min-height: min(162px, 100%);
@@ -192,39 +75,9 @@
       background-color: transparent;
     }
   }
-  &__group__tags {
-    display: flex;
-    gap: 10px 20px;
-  }
-  &__group--tag {
-    @extend %textInput;
-    padding: 6px 12px;
-    border-radius: 6px;
-    color: #9e9da8;
-    background-color: var(--bg-tag);
-    transition: color 0.2s;
-    &:hover {
-      color: var(--color-tag-hover);
-      cursor: pointer;
-    }
-  }
-  &__group__btn {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    column-gap: 20px;
-    margin-top: 18px;
-    @include abstract.breakpoints(sm) {
-      justify-content: center;
-      margin-top: 30px;
-      > * {
-        width: 100%;
-      }
-    }
-  }
+
   &__heading,
-  &__row,
-  &__group__btn {
+  &__row {
     @include abstract.breakpoints(xl) {
       padding: 0 30px;
     }

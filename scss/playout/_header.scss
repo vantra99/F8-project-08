@@ -222,6 +222,12 @@
       background-color: var(--color-separate-header);
     }
   }
+  &__group--btn__wrap {
+    position: relative;
+    &:hover .action-dropdown {
+      display: block;
+    }
+  }
   &__group--btn {
     @extend %flexCenter;
     gap: 10px;

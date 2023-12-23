@@ -60,4 +60,34 @@ html.dark {
   --text-color-signUp-primary: #b9babe;
   --color-text-label-checkbox: #b9babe;
   --color-placeholder-input-signup: #b9babe;
+
+  // product-page
+  --bg-product: #292e39;
+  --bg-breadcrumbs: #171c28;
+  --shadow-breadcrumbs: rgba(23, 28, 40, 0.2);
+  --bg-product-info: var(--bg-breadcrumbs);
+  --bg-tag-prod-info: #292e39;
+  --bg-search-bar: var(--bg-breadcrumbs);
+  --color-placeholder-search-bar: #b9babe;
+
+  --bg-review: #171c28;
+
+  // action-dropdown
+  --bg-action-dropdown: #363d4b;
+  --shadow-action-dropdown: rgba(23, 28, 40, 0.4);
+  --border-action-photo: #171c28;
+  --bg-action-separate: #171c28;
+  --color-text-action-dropdown: #b9babe;
+
+  // checkout-page
+  --bg-checkout-page: #292e39;
+  --bg-checkout-breadcrumb: #171c28;
+  --shadow-checkout-product: rgba(23, 28, 40, 0.2);
+  --bg-checkout-separate: #292e39;
+  --border-color-checkout-button: #292e39;
+  --bg-color-gift: rgb(41, 46, 57);
+  --shadow-gift: rgba(23, 28, 40, 0.2);
+
+  // modal
+  --bg-modal: #292e39;
 }

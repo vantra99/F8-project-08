@@ -198,22 +198,22 @@
                     class="filter__arrow"
                   />
                   <h2 class="filter__heading">Filter</h2>
-                  <form action="" class="filter__form">
+                  <form action="" class="filter__form form">
                     <div class="filter__row">
                       <!-- filter-col-01 -->
                       <div class="filter__col">
-                        <label class="filter__label">Price</label>
-                        <div class="filter__group">
+                        <label class="form__label">Price</label>
+                        <div class="form__groupf">
                           <div
-                            class="filter__group--rate"
+                            class="form__groupf--rate"
                             style="--min-value: 10%; --max-value: 60%"
                           ></div>
                         </div>
-                        <div class="filter__group">
+                        <div class="form__groupf">
                           <div>
                             <label
                               for=""
-                              class="filter__label filter__label--small"
+                              class="form__label form__label--small"
                             >
                               Minimum
                             </label>
@@ -221,14 +221,14 @@
                               type="text"
                               id=""
                               name=""
-                              class="filter__input"
+                              class="form__input"
                               value="$30.00"
                             />
                           </div>
                           <div>
                             <label
                               for=""
-                              class="filter__label filter__label--small"
+                              class="form__label form__label--small"
                             >
                               Maximum
                             </label>
@@ -236,7 +236,7 @@
                               type="text"
                               id=""
                               name=""
-                              class="filter__input"
+                              class="form__input"
                               value="$100.00"
                             />
                           </div>
@@ -245,60 +245,58 @@
                       <div class="filter__saperate filter__saperate--col"></div>
                       <!-- filter-col-02 -->
                       <div class="filter__col">
-                        <label class="filter__label">Size/Weight</label>
-                        <div class="filter__group">
-                          <div class="filter__group__inner">
-                            <div class="filter__group__inner--item">
-                              <input
-                                type="text"
-                                id=""
-                                name=""
-                                class="filter__input__select"
-                                value="500g"
-                              />
-                              <img
-                                src="./assets/icons/arrow-down-2.svg"
-                                alt="icon"
-                                class="icon"
-                              />
-                            </div>
-                            <div class="filter__saperate"></div>
-                            <div class="filter__group__inner--item">
-                              <input
-                                type="text"
-                                id=""
-                                name=""
-                                class="filter__input__select"
-                                value="Gram"
-                              />
-                              <img
-                                src="./assets/icons/arrow-down-2.svg"
-                                alt="icon"
-                                class="icon"
-                              />
-                            </div>
+                        <label class="form__label">Size/Weight</label>
+                        <div class="form__groupf form__groupf--wrap">
+                          <div class="form__groupf--item">
+                            <input
+                              type="text"
+                              id=""
+                              name=""
+                              class="form__input__select"
+                              value="500g"
+                            />
+                            <img
+                              src="./assets/icons/arrow-down-2.svg"
+                              alt="icon"
+                              class="icon"
+                            />
+                          </div>
+                          <div class="filter__saperate"></div>
+                          <div class="form__groupf--item">
+                            <input
+                              type="text"
+                              id=""
+                              name=""
+                              class="form__input__select"
+                              value="Gram"
+                            />
+                            <img
+                              src="./assets/icons/arrow-down-2.svg"
+                              alt="icon"
+                              class="icon"
+                            />
                           </div>
                         </div>
-                        <div class="filter__group">
-                          <div class="filter__group__tags">
-                            <button class="filter__group--tag">Small</button>
-                            <button class="filter__group--tag">Medium</button>
-                            <button class="filter__group--tag">Large</button>
+                        <div class="form__groupf">
+                          <div class="form__groupf__tags">
+                            <button class="form__groupf__tag">Small</button>
+                            <button class="form__groupf__tag">Medium</button>
+                            <button class="form__groupf__tag">Large</button>
                           </div>
                         </div>
                       </div>
                       <div class="filter__saperate filter__saperate--col"></div>
                       <!-- filter-col-03 -->
                       <div class="filter__col">
-                        <label class="filter__label">Brand</label>
-                        <div class="filter__group">
-                          <div class="filter__group__brand">
-                            <div class="filter__group__brand--search">
+                        <label class="form__label">Brand</label>
+                        <div class="form__groupf">
+                          <div class="form__groupf__brand">
+                            <div class="form__groupf__brand--search">
                               <input
                                 type="text"
                                 id=""
                                 name=""
-                                class="filter__input__select filter__group__brand--input"
+                                class="form__input__select form__groupf__brand--input"
                                 placeholder="Search brand name"
                               />
                               <img
@@ -309,18 +307,16 @@
                             </div>
                           </div>
                         </div>
-                        <div class="filter__group">
-                          <div class="filter__group__tags">
-                            <button class="filter__group--tag">Lavazza</button>
-                            <button class="filter__group--tag">Nescafe</button>
-                            <button class="filter__group--tag">
-                              Starbucks
-                            </button>
+                        <div class="form__groupf">
+                          <div class="form__groupf__tags">
+                            <button class="form__groupf__tag">Lavazza</button>
+                            <button class="form__groupf__tag">Nescafe</button>
+                            <button class="form__groupf__tag">Starbucks</button>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="filter__group__btn">
+                    <div class="form__groupf__btn">
                       <button
                         class="btn--text js-toggle"
                         toggle-target="#hide-show-filter"

@@ -32,6 +32,7 @@ html.light {
   // button
   --color-text-filter: #6c6c72;
   --color-text-btn-outline: #1a162e;
+  --color-text-btn: #9e9da8;
 
   // product
   --bg-product-item: #fff;
@@ -53,4 +54,43 @@ html.light {
   --text-color-signUp-primary: #1a162e;
   --color-text-label-checkbox: #9e9da8;
   --color-placeholder-input-signup: #d2d1d6;
+
+  // product-page
+  --bg-product: #fff;
+  @include abstract.breakpoints(sm) {
+    --bg-product: #f9f9fc;
+  }
+  --bg-breadcrumbs: #f6f6f6;
+  @include abstract.breakpoints(sm) {
+    --bg-breadcrumbs: #fff;
+  }
+  --shadow-breadcrumbs: rgba(237, 237, 246, 0.2);
+  --bg-product-info: var(--bg-breadcrumbs);
+  --bg-tag-prod-info: #ededf6;
+  --bg-search-bar: var(--bg-breadcrumbs);
+  --color-placeholder-search-bar: #9e9da8;
+
+  --bg-review: #fafafd;
+
+  // action-dropdown
+  --bg-action-dropdown: #fff;
+  --shadow-action-dropdown: rgba(200, 200, 200, 0.4);
+  --border-action-photo: #d2d1d6;
+  --bg-action-separate: #d2d1d6;
+  --color-text-action-dropdown: #1a162e;
+
+  // checkout-page
+  --bg-checkout-page: #f6f6f6;
+  @include abstract.breakpoints(md) {
+    --bg-checkout-page: #f9f9fd;
+  }
+  --bg-checkout-breadcrumb: #fff;
+  --shadow-checkout-product: rgba(237, 237, 246, 0.2);
+  --bg-checkout-separate: #d2d1d6;
+  --border-color-checkout-button: #d2d1d6;
+  --bg-color-gift: rgba(229, 217, 255, 0.5);
+  --shadow-gift: rgba(237, 237, 246, 0.2);
+
+  // modal
+  --bg-modal: #f6f6f6;
 }

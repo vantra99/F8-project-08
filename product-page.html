@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grocery Mart</title>
+    <title>Product page | Grocery Mart</title>
     <!-- favicon -->
     <link
       rel="apple-touch-icon"
@@ -44,216 +44,130 @@
       load("#header-logined", "./template/header-logined.html");
     </script>
     <!-- main -->
-    <div class="container home">
-      <!-- slide-show -->
-      <div class="slideShow home__container">
-        <div class="slideShow__inner">
-          <div class="slideShow__item">
-            <a href="#!" class="slideShow__item__wrap">
-              <picture>
-                <source
-                  media="(max-width: 767.98px)"
-                  srcset="./assets/img/slideshow/slideshow-sm.png"
-                />
-                <img
-                  src="./assets/img/slideshow/slideshow-pc.png"
-                  alt=""
-                  class="slideShow__item__wrap--photo"
-                />
-              </picture>
-            </a>
-          </div>
-          <div class="slideShow__item">
-            <a href="#!" class="slideShow__item__wrap">
-              <picture>
-                <source
-                  media="(max-width: 767.98px)"
-                  srcset="./assets/img/slideshow/slideshow-sm.png"
-                />
-                <img
-                  src="./assets/img/slideshow/slideshow-pc.png"
-                  alt=""
-                  class="slideShow__item__wrap--photo"
-                />
-              </picture>
-            </a>
-          </div>
-          <div class="slideShow__item">
-            <a href="#!" class="slideShow__item__wrap">
-              <picture>
-                <source
-                  media="(max-width: 767.98px)"
-                  srcset="./assets/img/slideshow/slideshow-sm.png"
-                />
-                <img
-                  src="./assets/img/slideshow/slideshow-pc.png"
-                  alt=""
-                  class="slideShow__item__wrap--photo"
-                />
-              </picture>
-            </a>
+    <main class="product-page">
+      <div class="container">
+        <!-- search-bar -->
+        <div class="product-container">
+          <div class="search-bar d-none d-md-flex">
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Search for item"
+              class="search-bar__input"
+            />
+            <button type="submit" class="search-bar__btn">
+              <img src="./assets/icons/search.svg" alt="icon" class="icon" />
+            </button>
           </div>
         </div>
-        <div class="slideShow__page">
-          <span class="slideShow__page--num">1</span>
-          <div class="slideShow__page--line"></div>
-          <span class="slideShow__page--num">5</span>
+        <!-- breadcrumbs -->
+        <div class="product-container">
+          <ul class="breadcrumbs">
+            <li>
+              <a href="#!" class="breadcrumbs__title">
+                Departments
+                <img src="./assets/icons/arrow-right.svg" alt="icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="breadcrumbs__title">
+                Coffee
+                <img src="./assets/icons/arrow-right.svg" alt="icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="breadcrumbs__title">
+                Coffee Beans
+                <img src="./assets/icons/arrow-right.svg" alt="icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="breadcrumbs__title breadcrumbs__end">
+                LavAzza
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <!-- Browse Categories -->
-      <div class="category home__container">
-        <div class="category__inner">
-          <h2 class="category__heading">Browse Categories</h2>
-          <div class="category__list">
-            <div
-              class="home__cate row row-cols-3 row-cols-lg-3 row-cols-md-1 gy-lg-3 gy-sm-2"
-            >
-              <!-- cate-01 -->
-              <div class="col">
-                <a href="#!" class="category__link">
-                  <article class="category__item">
-                    <figure class="category__item--photo">
-                      <img
-                        src="./assets/img/caterogy-item/cate-01.png"
-                        alt="caterogory"
-                      />
-                    </figure>
-                    <div class="category__item--text">
-                      <h3 class="category__item--text__price">$24 - $150</h3>
-                      <p class="category__item--text__desc">
-                        New sumatra mandeling coffe blend
-                      </p>
-                    </div>
-                  </article>
-                </a>
-              </div>
-              <!-- cate-02 -->
-              <div class="col">
-                <a href="#!" class="category__link">
-                  <article class="category__item">
-                    <figure class="category__item--photo">
-                      <img
-                        src="./assets/img/caterogy-item/cate-02.png"
-                        alt="caterogory"
-                      />
-                    </figure>
-                    <div class="category__item--text">
-                      <h3 class="category__item--text__price">$37 - $160</h3>
-                      <p class="category__item--text__desc">
-                        Espresso arabica and robusta beans
-                      </p>
-                    </div>
-                  </article>
-                </a>
-              </div>
-              <!-- cate-03 -->
-              <div class="col">
-                <a href="#!" class="category__link">
-                  <article class="category__item">
-                    <figure class="category__item--photo">
-                      <img
-                        src="./assets/img/caterogy-item/cate-03.png"
-                        alt="caterogory"
-                      />
-                    </figure>
-                    <div class="category__item--text">
-                      <h3 class="category__item--text__price">$32 - $160</h3>
-                      <p class="category__item--text__desc">
-                        Lavazza top class whole bean coffee blend
-                      </p>
-                    </div>
-                  </article>
-                </a>
+        <!-- product-preview -->
+        <div class="product-container">
+          <div class="row">
+            <div class="col-5 col-lg-12">
+              <div class="prod-preview">
+                <figure class="prod-preview__photo">
+                  <img
+                    src="./assets/img/product-item/pro-01.png"
+                    alt="product-photo"
+                    class="prod-preview__photo--item"
+                  />
+                  <img
+                    src="./assets/img/product-item/pro-02.png"
+                    alt="product-photo"
+                    class="prod-preview__photo--item"
+                  />
+                  <img
+                    src="./assets/img/product-item/pro-03.png"
+                    alt="product-photo"
+                    class="prod-preview__photo--item"
+                  />
+                  <img
+                    src="./assets/img/product-item/pro-04.png"
+                    alt="product-photo"
+                    class="prod-preview__photo--item"
+                  />
+                </figure>
+                <figure class="prod-preview__thumbs">
+                  <img
+                    src="./assets/img/product-item/pro-01.png"
+                    alt="product-photo"
+                    class="prod-preview__thumbs--item prod-preview__thumbs--current"
+                  />
+                  <img
+                    src="./assets/img/product-item/pro-02.png"
+                    alt="product-photo"
+                    class="prod-preview__thumbs--item"
+                  />
+                  <img
+                    src="./assets/img/product-item/pro-03.png"
+                    alt="product-photo"
+                    class="prod-preview__thumbs--item"
+                  />
+                  <img
+                    src="./assets/img/product-item/pro-04.png"
+                    alt="product-photo"
+                    class="prod-preview__thumbs--item"
+                  />
+                </figure>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- Product -->
-      <div class="product home__container">
-        <div class="product__inner">
-          <div class="product__row">
-            <h2 class="product__heading">Total LavAzza 1320</h2>
-            <div class="filter__wap product__filter--wrap">
-              <!-- button filter -->
-              <button
-                class="filter__btn product__filter js-toggle"
-                toggle-target="#hide-show-filter"
-              >
-                <span class="filter__btn--name product__filter--name">
-                  Filter
-                </span>
-                <img
-                  class="icon filter__btn--icon product__filter--icon"
-                  src="./assets/icons/product-icon-filter.svg"
-                  alt="icon-filter"
-                />
-              </button>
-              <!-- filter -->
-              <div id="hide-show-filter" class="filter hide">
-                <div class="filter__inner">
-                  <img
-                    src="./assets/img/filter-arrow.png"
-                    alt="filter-arrow"
-                    class="filter__arrow"
-                  />
-                  <h2 class="filter__heading">Filter</h2>
-                  <form action="" class="filter__form">
-                    <div class="filter__row">
-                      <!-- filter-col-01 -->
-                      <div class="filter__col">
-                        <label class="filter__label">Price</label>
-                        <div class="filter__group">
-                          <div
-                            class="filter__group--rate"
-                            style="--min-value: 10%; --max-value: 60%"
-                          ></div>
-                        </div>
-                        <div class="filter__group">
-                          <div>
-                            <label
-                              for=""
-                              class="filter__label filter__label--small"
-                            >
-                              Minimum
-                            </label>
-                            <input
-                              type="text"
-                              id=""
-                              name=""
-                              class="filter__input"
-                              value="$30.00"
-                            />
-                          </div>
-                          <div>
-                            <label
-                              for=""
-                              class="filter__label filter__label--small"
-                            >
-                              Maximum
-                            </label>
-                            <input
-                              type="text"
-                              id=""
-                              name=""
-                              class="filter__input"
-                              value="$100.00"
-                            />
-                          </div>
-                        </div>
+            <div class="col-7 col-lg-12">
+              <form action="" class="form-prod">
+                <section class="prod-info">
+                  <h1 class="prod-info__heading">
+                    Coffee Beans - Espresso Arabica and Robusta Beans
+                  </h1>
+                  <div class="row">
+                    <div class="col-5 col-xl-6 col-lg-12">
+                      <div class="prod-info__prop">
+                        <img
+                          src="./assets/icons/product-icon-star.svg"
+                          alt="icon"
+                          class="prod-info__prop--icon"
+                        />
+                        <p class="prod-info__prop--title">(3.5) 1100 reviews</p>
                       </div>
-                      <div class="filter__saperate filter__saperate--col"></div>
-                      <!-- filter-col-02 -->
-                      <div class="filter__col">
-                        <label class="filter__label">Size/Weight</label>
-                        <div class="filter__group">
-                          <div class="filter__group__inner">
-                            <div class="filter__group__inner--item">
+                      <div class="prod-info__prop">
+                        <div class="form pro-info__form">
+                          <label class="form__label">Size/Weight</label>
+                          <div
+                            class="form__groupf form__groupf--wrap prod-info__prop--inner"
+                          >
+                            <div class="form__groupf--item">
                               <input
                                 type="text"
                                 id=""
                                 name=""
-                                class="filter__input__select"
+                                class="form__input__select"
                                 value="500g"
                               />
                               <img
@@ -263,12 +177,12 @@
                               />
                             </div>
                             <div class="filter__saperate"></div>
-                            <div class="filter__group__inner--item">
+                            <div class="form__groupf--item">
                               <input
                                 type="text"
                                 id=""
                                 name=""
-                                class="filter__input__select"
+                                class="form__input__select"
                                 value="Gram"
                               />
                               <img
@@ -278,414 +192,679 @@
                               />
                             </div>
                           </div>
-                        </div>
-                        <div class="filter__group">
-                          <div class="filter__group__tags">
-                            <button class="filter__group--tag">Small</button>
-                            <button class="filter__group--tag">Medium</button>
-                            <button class="filter__group--tag">Large</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__saperate filter__saperate--col"></div>
-                      <!-- filter-col-03 -->
-                      <div class="filter__col">
-                        <label class="filter__label">Brand</label>
-                        <div class="filter__group">
-                          <div class="filter__group__brand">
-                            <div class="filter__group__brand--search">
-                              <input
-                                type="text"
-                                id=""
-                                name=""
-                                class="filter__input__select filter__group__brand--input"
-                                placeholder="Search brand name"
-                              />
-                              <img
-                                src="./assets/icons/search.svg"
-                                alt="icon"
-                                class="icon"
-                              />
+                          <div class="form__groupf">
+                            <div class="form__groupf__tags">
+                              <button class="form__groupf__tag prod-info__tag">
+                                Small
+                              </button>
+                              <button class="form__groupf__tag prod-info__tag">
+                                Medium
+                              </button>
+                              <button class="form__groupf__tag prod-info__tag">
+                                Large
+                              </button>
                             </div>
                           </div>
                         </div>
-                        <div class="filter__group">
-                          <div class="filter__group__tags">
-                            <button class="filter__group--tag">Lavazza</button>
-                            <button class="filter__group--tag">Nescafe</button>
-                            <button class="filter__group--tag">
-                              Starbucks
+                      </div>
+                    </div>
+                    <div class="col-7 col-xl-6 col-lg-12">
+                      <div class="prod-info__props">
+                        <div class="prod-info__prop">
+                          <img
+                            src="./assets/icons/document.svg"
+                            alt="icon"
+                            class="icon prod-info__prop--icon"
+                          />
+                          <p class="prod-info__prop--title">Compare</p>
+                        </div>
+                        <div class="prod-info__prop">
+                          <img
+                            src="./assets/icons/cart.svg"
+                            alt="icon"
+                            class="icon prod-info__prop--icon"
+                          />
+                          <div class="prod-info__prop--wrap">
+                            <p class="prod-info__prop--title">Delivery</p>
+                            <p class="prod-info__prop--desc">
+                              From $6 for 1-3 days
+                            </p>
+                          </div>
+                        </div>
+                        <div class="prod-info__prop">
+                          <img
+                            src="./assets/icons/bag.svg"
+                            alt="icon"
+                            class="icon prod-info__prop--icon"
+                          />
+                          <div class="prod-info__prop--wrap">
+                            <p class="prod-info__prop--title">Pickup</p>
+                            <p class="prod-info__prop--desc">
+                              Out of 2 store, today
+                            </p>
+                          </div>
+                        </div>
+                        <div class="prod-info__card">
+                          <div class="prod-info__card__row">
+                            <span class="prod-info__card__price">$500.00</span>
+                            <span class="prod-info__card__tax">10%</span>
+                          </div>
+                          <span class="prod-info__card__total-price"
+                            >$540.00</span
+                          >
+                          <div class="prod-info__card__row">
+                            <button
+                              class="btn btn--primary prod-info__card--btn"
+                            >
+                              Add to cart
+                            </button>
+                            <button class="btn prod-info__card__heart">
+                              <img
+                                src="./assets/icons/heart.svg"
+                                alt="icon"
+                                class="icon"
+                              />
                             </button>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="filter__group__btn">
-                      <button
-                        class="btn--text js-toggle"
-                        toggle-target="#hide-show-filter"
-                      >
-                        Cancel
-                      </button>
-                      <button
-                        class="btn--primary js-toggle"
-                        toggle-target="#hide-show-filter"
-                      >
-                        Show Result
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
+                  </div>
+                </section>
+              </form>
             </div>
           </div>
-          <div class="product__list">
-            <div class="row row-cols-4 row-cols-lg-2 row-cols-sm-1 gy-3">
-              <!-- product-01 -->
-              <div class="col">
-                <article class="product__item">
-                  <div class="product__item--thumb">
-                    <figure class="product__item--photo">
-                      <a href="#!" class="product__item--link">
+        </div>
+        <!-- product-tab -->
+        <div class="product-container">
+          <div class="prod-tab js-tabs">
+            <ul class="prod-tab__list">
+              <li class="prod-tab__item prod-tab__item--current">
+                Description
+              </li>
+              <li class="prod-tab__item">Review (1100)</li>
+              <li class="prod-tab__item">Similar</li>
+            </ul>
+            <div class="prod-tab__contents">
+              <div class="prod-tab__content prod-tab__content--current">
+                <div class="row">
+                  <div class="col col-8 col-xl-10 col-lg-12">
+                    <div class="text-editer">
+                      <h2>Lorem ipsum dolor sit amet.</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        <em>adipisicing</em> elit. Rerum cum possimus excepturi
+                        dignissimos tenetur quasi maiores nobis
+                        <u>repudiandae</u> id assumenda.
+                      </p>
+                      <p>
+                        Lorem <strong>ipsum</strong> dolor sit, amet
+                        <a href="http://www.google.com/" target="_blank">
+                          consectetur adipisicing</a
+                        >
+                        elit. Exercitationem voluptatem quo, eligendi magni
+                        blanditiis quia aliquam voluptates rem accusamus
+                        repellat commodi odio suscipit eaque a.
+                      </p>
+                      <h2>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Voluptatum, eos.
+                      </h2>
+                      <h3>Lorem ipsum dolor sit amet.</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Animi, aliquid?
+                      </p>
+                      <blockquote>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Aperiam pariatur ipsum, porro rerum eum eius!
+                      </blockquote>
+                      <figure>
                         <img
                           src="./assets/img/product-item/pro-01.png"
-                          alt="product-photo"
+                          alt="photo"
                         />
-                      </a>
-                    </figure>
-                    <figure class="product__item--icon heart__btn">
-                      <img
-                        src="./assets/icons/product-icon-heart.svg"
-                        alt="icon-heart"
-                        class="icon heart__btn--icon"
-                      />
-                      <img
-                        src="./assets/icons/heart-red.svg"
-                        alt="icon-heart-red"
-                        class="heart__btn--red"
-                      />
-                    </figure>
-                  </div>
-                  <h2 class="product__item--heading">
-                    <a href="#!">
-                      Coffee Beans - Espresso Arabica and Robusta Beans
-                    </a>
-                  </h2>
-                  <span class="product__item--brand">Lavazza</span>
-                  <div class="product__item--footer">
-                    <span class="product__item--price">$47.00</span>
-                    <img
-                      src="./assets/icons/product-icon-star.svg"
-                      alt="icon-star"
-                      class="product__item--star"
-                    />
-                    <span class="product__item--rating">4.3</span>
-                  </div>
-                </article>
-              </div>
-              <!-- product-02 -->
-              <div class="col">
-                <article class="product__item">
-                  <div class="product__item--thumb">
-                    <figure class="product__item--photo">
-                      <a href="#!" class="product__item--link">
-                        <img
-                          src="./assets/img/product-item/pro-02.png"
-                          alt="product-photo"
-                        />
-                      </a>
-                    </figure>
-                    <figure
-                      class="product__item--icon heart__btn heart__btn--liked"
-                    >
-                      <img
-                        src="./assets/icons/product-icon-heart.svg"
-                        alt="icon-heart"
-                        class="icon heart__btn--icon"
-                      />
-                      <img
-                        src="./assets/icons/heart-red.svg"
-                        alt="icon-heart-red"
-                        class="heart__btn--red"
-                      />
-                    </figure>
-                  </div>
-                  <h2 class="product__item--heading">
-                    <a href="#!">
-                      Lavazza Coffee Blends - Try the Italian Espresso
-                    </a>
-                  </h2>
-                  <span class="product__item--brand">Lavazza</span>
-                  <div class="product__item--footer">
-                    <span class="product__item--price">$53.00</span>
-                    <img
-                      src="./assets/icons/product-icon-star.svg"
-                      alt="icon-star"
-                      class="product__item--star"
-                    />
-                    <span class="product__item--rating">3.4</span>
-                  </div>
-                </article>
-              </div>
-              <!-- product-03 -->
-              <div class="col">
-                <article class="product__item">
-                  <div class="product__item--thumb">
-                    <figure class="product__item--photo">
-                      <a href="#!" class="product__item--link">
-                        <img
-                          src="./assets/img/product-item/pro-03.png"
-                          alt="product-photo"
-                        />
-                      </a>
-                    </figure>
-                    <figure class="product__item--icon heart__btn">
-                      <img
-                        src="./assets/icons/product-icon-heart.svg"
-                        alt="icon-heart"
-                        class="icon heart__btn--icon"
-                      />
-                      <img
-                        src="./assets/icons/heart-red.svg"
-                        alt="icon-heart-red"
-                        class="heart__btn--red"
-                      />
-                    </figure>
-                  </div>
-                  <h2 class="product__item--heading">
-                    <a href="#!">
-                      Lavazza - Caffè Espresso Black Tin - Ground coffee
-                    </a>
-                  </h2>
-                  <span class="product__item--brand">welikecoffee</span>
-                  <div class="product__item--footer">
-                    <span class="product__item--price">$99.99</span>
-                    <img
-                      src="./assets/icons/product-icon-star.svg"
-                      alt="icon-star"
-                      class="product__item--star"
-                    />
-                    <span class="product__item--rating">5.0</span>
-                  </div>
-                </article>
-              </div>
-              <!-- product-04 -->
-              <div class="col">
-                <article class="product__item">
-                  <div class="product__item--thumb">
-                    <figure class="product__item--photo">
-                      <a href="#!" class="product__item--link">
-                        <img
-                          src="./assets/img/product-item/pro-04.png"
-                          alt="product-photo"
-                        />
-                      </a>
-                    </figure>
-                    <figure class="product__item--icon heart__btn">
-                      <img
-                        src="./assets/icons/product-icon-heart.svg"
-                        alt="icon-heart"
-                        class="icon heart__btn--icon"
-                      />
-                      <img
-                        src="./assets/icons/heart-red.svg"
-                        alt="icon-heart-red"
-                        class="heart__btn--red"
-                      />
-                    </figure>
-                  </div>
-                  <h2 class="product__item--heading">
-                    <a href="#!">
-                      Qualità Oro Mountain Grown - Espresso Coffee Beans
-                    </a>
-                  </h2>
-                  <span class="product__item--brand">Lavazza</span>
-                  <div class="product__item--footer">
-                    <span class="product__item--price">$38.65</span>
-                    <img
-                      src="./assets/icons/product-icon-star.svg"
-                      alt="icon-star"
-                      class="product__item--star"
-                    />
-                    <span class="product__item--rating">4.4</span>
-                  </div>
-                </article>
-              </div>
-              <!-- product-05 -->
-              <div class="col">
-                <article class="product__item">
-                  <div class="product__item--thumb">
-                    <figure class="product__item--photo">
-                      <a href="#!" class="product__item--link">
+                        <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+                      </figure>
+                      <h3>Lorem ipsum dolor sit amet.</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Animi, aliquid?
+                      </p>
+                      <blockquote>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Aperiam pariatur ipsum, porro rerum eum eius!
+                      </blockquote>
+                      <figure>
                         <img
                           src="./assets/img/product-item/pro-01.png"
-                          alt="product-photo"
+                          alt="photo"
                         />
-                      </a>
-                    </figure>
-                    <figure
-                      class="product__item--icon heart__btn heart__btn--liked"
-                    >
-                      <img
-                        src="./assets/icons/product-icon-heart.svg"
-                        alt="icon-heart"
-                        class="icon heart__btn--icon"
-                      />
-                      <img
-                        src="./assets/icons/heart-red.svg"
-                        alt="icon-heart-red"
-                        class="heart__btn--red"
-                      />
-                    </figure>
+                        <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+                      </figure>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Neque aspernatur dolorum ad possimus eaque esse.
+                      </p>
+                    </div>
                   </div>
-                  <h2 class="product__item--heading">
-                    <a href="#!">
-                      Coffee Beans - Espresso Arabica and Robusta Beans
-                    </a>
-                  </h2>
-                  <span class="product__item--brand">Lavazza</span>
-                  <div class="product__item--footer">
-                    <span class="product__item--price">$47.00</span>
-                    <img
-                      src="./assets/icons/product-icon-star.svg"
-                      alt="icon-star"
-                      class="product__item--star"
-                    />
-                    <span class="product__item--rating">4.3</span>
-                  </div>
-                </article>
+                </div>
               </div>
-              <!-- product-06 -->
-              <div class="col">
-                <article class="product__item">
-                  <div class="product__item--thumb">
-                    <figure class="product__item--photo">
-                      <a href="#!" class="product__item--link">
-                        <img
-                          src="./assets/img/product-item/pro-02.png"
-                          alt="product-photo"
-                        />
-                      </a>
-                    </figure>
-                    <figure class="product__item--icon heart__btn">
-                      <img
-                        src="./assets/icons/product-icon-heart.svg"
-                        alt="icon-heart"
-                        class="icon heart__btn--icon"
-                      />
-                      <img
-                        src="./assets/icons/heart-red.svg"
-                        alt="icon-heart-red"
-                        class="heart__btn--red"
-                      />
-                    </figure>
+              <div class="prod-tab__content">
+                <h2 class="prod-tab__content--heading">
+                  What our customers are saying
+                </h2>
+                <div class="row row-cols-3 row-cols-md-1 gy-3">
+                  <!-- review-01 -->
+                  <div class="col">
+                    <section class="review">
+                      <div class="review__content">
+                        <figure class="review__avatar">
+                          <img
+                            src="./assets/img/reviewer-avatar/reviewer-01.jpg"
+                            alt="photo-avatar"
+                          />
+                        </figure>
+                        <div class="review__info">
+                          <h4 class="review__info--name">Jakir Hussen</h4>
+                          <p class="review__info--comment">
+                            Great product, I love this Coffee Beans
+                          </p>
+                        </div>
+                      </div>
+                      <div class="review__rating">
+                        <figure class="review__rating--star">
+                          <img
+                            src="./assets/icons/product-icon-star.svg"
+                            alt="icon-star"
+                          />
+                          <img
+                            src="./assets/icons/product-icon-star.svg"
+                            alt="icon-star"
+                          />
+                          <img
+                            src="./assets/icons/product-icon-star.svg"
+                            alt="icon-star"
+                          />
+                          <img
+                            src="./assets/icons/star-half.svg"
+                            alt="icon-star"
+                          />
+                          <img
+                            src="./assets/icons/star-outline.svg"
+                            alt="icon-star"
+                          />
+                        </figure>
+                        <span class="review__rating--desc">(3.5) Review</span>
+                      </div>
+                    </section>
                   </div>
-                  <h2 class="product__item--heading">
-                    <a href="#!">
-                      Lavazza Coffee Blends - Try the Italian Espresso
-                    </a>
-                  </h2>
-                  <span class="product__item--brand">Lavazza</span>
-                  <div class="product__item--footer">
-                    <span class="product__item--price">$53.00</span>
-                    <img
-                      src="./assets/icons/product-icon-star.svg"
-                      alt="icon-star"
-                      class="product__item--star"
-                    />
-                    <span class="product__item--rating">3.4</span>
+                  <!-- review-02 -->
+                  <div class="col">
+                    <section class="review">
+                      <div class="review__content">
+                        <figure class="review__avatar">
+                          <img
+                            src="./assets/img/reviewer-avatar/reviewer-02.jpg"
+                            alt="photo-avatar"
+                          />
+                        </figure>
+                        <div class="review__info">
+                          <h4 class="review__info--name">Jakir Hussen</h4>
+                          <p class="review__info--comment">
+                            Great product, I love this Coffee Beans
+                          </p>
+                        </div>
+                      </div>
+                      <div class="review__rating">
+                        <figure class="review__rating--star">
+                          <img
+                            src="./assets/icons/product-icon-star.svg"
+                            alt="icon-star"
+                          />
+                          <img
+                            src="./assets/icons/product-icon-star.svg"
+                            alt="icon-star"
+                          />
+                          <img
+                            src="./assets/icons/product-icon-star.svg"
+                            alt="icon-star"
+                          />
+                          <img
+                            src="./assets/icons/star-half.svg"
+                            alt="icon-star"
+                          />
+                          <img
+                            src="./assets/icons/star-outline.svg"
+                            alt="icon-star"
+                          />
+                        </figure>
+                        <span class="review__rating--desc">(3.5) Review</span>
+                      </div>
+                    </section>
                   </div>
-                </article>
+                  <!-- review-03 -->
+                  <div class="col">
+                    <section class="review">
+                      <div class="review__content">
+                        <figure class="review__avatar">
+                          <img
+                            src="./assets/img/reviewer-avatar/reviewer-03.jpg"
+                            alt="photo-avatar"
+                          />
+                        </figure>
+                        <div class="review__info">
+                          <h4 class="review__info--name">Jakir Hussen</h4>
+                          <p class="review__info--comment">
+                            Great product, I love this Coffee Beans
+                          </p>
+                        </div>
+                      </div>
+                      <div class="review__rating">
+                        <figure class="review__rating--star">
+                          <img
+                            src="./assets/icons/product-icon-star.svg"
+                            alt="icon-star"
+                          />
+                          <img
+                            src="./assets/icons/product-icon-star.svg"
+                            alt="icon-star"
+                          />
+                          <img
+                            src="./assets/icons/product-icon-star.svg"
+                            alt="icon-star"
+                          />
+                          <img
+                            src="./assets/icons/star-half.svg"
+                            alt="icon-star"
+                          />
+                          <img
+                            src="./assets/icons/star-outline.svg"
+                            alt="icon-star"
+                          />
+                        </figure>
+                        <span class="review__rating--desc">(3.5) Review</span>
+                      </div>
+                    </section>
+                  </div>
+                </div>
               </div>
-              <!-- product-07 -->
-              <div class="col">
-                <article class="product__item">
-                  <div class="product__item--thumb">
-                    <figure class="product__item--photo">
-                      <a href="#!" class="product__item--link">
+              <div class="prod-tab__content">
+                <h2 class="prod-tab__content--heading">
+                  Similar items you might like
+                </h2>
+                <div class="row row-cols-4 row-cols-lg-2 row-cols-sm-1 gy-3">
+                  <!-- product-01 -->
+                  <div class="col">
+                    <article class="product__item">
+                      <div class="product__item--thumb">
+                        <figure class="product__item--photo">
+                          <a
+                            href="./product-page.html"
+                            class="product__item--link"
+                          >
+                            <img
+                              src="./assets/img/product-item/pro-01.png"
+                              alt="product-photo"
+                            />
+                          </a>
+                        </figure>
+                        <figure class="product__item--icon heart__btn">
+                          <img
+                            src="./assets/icons/product-icon-heart.svg"
+                            alt="icon-heart"
+                            class="icon heart__btn--icon"
+                          />
+                          <img
+                            src="./assets/icons/heart-red.svg"
+                            alt="icon-heart-red"
+                            class="heart__btn--red"
+                          />
+                        </figure>
+                      </div>
+                      <h2 class="product__item--heading">
+                        <a href="./product-page.html">
+                          Coffee Beans - Espresso Arabica and Robusta Beans
+                        </a>
+                      </h2>
+                      <span class="product__item--brand">Lavazza</span>
+                      <div class="product__item--footer">
+                        <span class="product__item--price">$47.00</span>
                         <img
-                          src="./assets/img/product-item/pro-03.png"
-                          alt="product-photo"
+                          src="./assets/icons/product-icon-star.svg"
+                          alt="icon-star"
+                          class="product__item--star"
                         />
-                      </a>
-                    </figure>
-                    <figure class="product__item--icon heart__btn">
-                      <img
-                        src="./assets/icons/product-icon-heart.svg"
-                        alt="icon-heart"
-                        class="icon heart__btn--icon"
-                      />
-                      <img
-                        src="./assets/icons/heart-red.svg"
-                        alt="icon-heart-red"
-                        class="heart__btn--red"
-                      />
-                    </figure>
+                        <span class="product__item--rating">4.3</span>
+                      </div>
+                    </article>
                   </div>
-                  <h2 class="product__item--heading">
-                    <a href="#!">
-                      Lavazza - Caffè Espresso Black Tin - Ground coffee
-                    </a>
-                  </h2>
-                  <span class="product__item--brand">welikecoffee</span>
-                  <div class="product__item--footer">
-                    <span class="product__item--price">$99.99</span>
-                    <img
-                      src="./assets/icons/product-icon-star.svg"
-                      alt="icon-star"
-                      class="product__item--star"
-                    />
-                    <span class="product__item--rating">5.0</span>
-                  </div>
-                </article>
-              </div>
-              <!-- product-08 -->
-              <div class="col">
-                <article class="product__item">
-                  <div class="product__item--thumb">
-                    <figure class="product__item--photo">
-                      <a href="#!" class="product__item--link">
+                  <!-- product-02 -->
+                  <div class="col">
+                    <article class="product__item">
+                      <div class="product__item--thumb">
+                        <figure class="product__item--photo">
+                          <a
+                            href="./product-page.html"
+                            class="product__item--link"
+                          >
+                            <img
+                              src="./assets/img/product-item/pro-02.png"
+                              alt="product-photo"
+                            />
+                          </a>
+                        </figure>
+                        <figure
+                          class="product__item--icon heart__btn heart__btn--liked"
+                        >
+                          <img
+                            src="./assets/icons/product-icon-heart.svg"
+                            alt="icon-heart"
+                            class="icon heart__btn--icon"
+                          />
+                          <img
+                            src="./assets/icons/heart-red.svg"
+                            alt="icon-heart-red"
+                            class="heart__btn--red"
+                          />
+                        </figure>
+                      </div>
+                      <h2 class="product__item--heading">
+                        <a href="./product-page.html">
+                          Lavazza Coffee Blends - Try the Italian Espresso
+                        </a>
+                      </h2>
+                      <span class="product__item--brand">Lavazza</span>
+                      <div class="product__item--footer">
+                        <span class="product__item--price">$53.00</span>
                         <img
-                          src="./assets/img/product-item/pro-04.png"
-                          alt="product-photo"
+                          src="./assets/icons/product-icon-star.svg"
+                          alt="icon-star"
+                          class="product__item--star"
                         />
-                      </a>
-                    </figure>
-                    <figure class="product__item--icon heart__btn">
-                      <img
-                        src="./assets/icons/product-icon-heart.svg"
-                        alt="icon-heart"
-                        class="icon heart__btn--icon"
-                      />
-                      <img
-                        src="./assets/icons/heart-red.svg"
-                        alt="icon-heart-red"
-                        class="heart__btn--red"
-                      />
-                    </figure>
+                        <span class="product__item--rating">3.4</span>
+                      </div>
+                    </article>
                   </div>
-                  <h2 class="product__item--heading">
-                    <a href="#!">
-                      Qualità Oro Mountain Grown - Espresso Coffee Beans
-                    </a>
-                  </h2>
-                  <span class="product__item--brand">Lavazza</span>
-                  <div class="product__item--footer">
-                    <span class="product__item--price">$38.65</span>
-                    <img
-                      src="./assets/icons/product-icon-star.svg"
-                      alt="icon-star"
-                      class="product__item--star"
-                    />
-                    <span class="product__item--rating">4.4</span>
+                  <!-- product-03 -->
+                  <div class="col">
+                    <article class="product__item">
+                      <div class="product__item--thumb">
+                        <figure class="product__item--photo">
+                          <a
+                            href="./product-page.html"
+                            class="product__item--link"
+                          >
+                            <img
+                              src="./assets/img/product-item/pro-03.png"
+                              alt="product-photo"
+                            />
+                          </a>
+                        </figure>
+                        <figure class="product__item--icon heart__btn">
+                          <img
+                            src="./assets/icons/product-icon-heart.svg"
+                            alt="icon-heart"
+                            class="icon heart__btn--icon"
+                          />
+                          <img
+                            src="./assets/icons/heart-red.svg"
+                            alt="icon-heart-red"
+                            class="heart__btn--red"
+                          />
+                        </figure>
+                      </div>
+                      <h2 class="product__item--heading">
+                        <a href="./product-page.html">
+                          Lavazza - Caffè Espresso Black Tin - Ground coffee
+                        </a>
+                      </h2>
+                      <span class="product__item--brand">welikecoffee</span>
+                      <div class="product__item--footer">
+                        <span class="product__item--price">$99.99</span>
+                        <img
+                          src="./assets/icons/product-icon-star.svg"
+                          alt="icon-star"
+                          class="product__item--star"
+                        />
+                        <span class="product__item--rating">5.0</span>
+                      </div>
+                    </article>
                   </div>
-                </article>
+                  <!-- product-04 -->
+                  <div class="col">
+                    <article class="product__item">
+                      <div class="product__item--thumb">
+                        <figure class="product__item--photo">
+                          <a
+                            href="./product-page.html"
+                            class="product__item--link"
+                          >
+                            <img
+                              src="./assets/img/product-item/pro-04.png"
+                              alt="product-photo"
+                            />
+                          </a>
+                        </figure>
+                        <figure class="product__item--icon heart__btn">
+                          <img
+                            src="./assets/icons/product-icon-heart.svg"
+                            alt="icon-heart"
+                            class="icon heart__btn--icon"
+                          />
+                          <img
+                            src="./assets/icons/heart-red.svg"
+                            alt="icon-heart-red"
+                            class="heart__btn--red"
+                          />
+                        </figure>
+                      </div>
+                      <h2 class="product__item--heading">
+                        <a href="./product-page.html">
+                          Qualità Oro Mountain Grown - Espresso Coffee Beans
+                        </a>
+                      </h2>
+                      <span class="product__item--brand">Lavazza</span>
+                      <div class="product__item--footer">
+                        <span class="product__item--price">$38.65</span>
+                        <img
+                          src="./assets/icons/product-icon-star.svg"
+                          alt="icon-star"
+                          class="product__item--star"
+                        />
+                        <span class="product__item--rating">4.4</span>
+                      </div>
+                    </article>
+                  </div>
+                  <!-- product-05 -->
+                  <div class="col">
+                    <article class="product__item">
+                      <div class="product__item--thumb">
+                        <figure class="product__item--photo">
+                          <a
+                            href="./product-page.html"
+                            class="product__item--link"
+                          >
+                            <img
+                              src="./assets/img/product-item/pro-01.png"
+                              alt="product-photo"
+                            />
+                          </a>
+                        </figure>
+                        <figure
+                          class="product__item--icon heart__btn heart__btn--liked"
+                        >
+                          <img
+                            src="./assets/icons/product-icon-heart.svg"
+                            alt="icon-heart"
+                            class="icon heart__btn--icon"
+                          />
+                          <img
+                            src="./assets/icons/heart-red.svg"
+                            alt="icon-heart-red"
+                            class="heart__btn--red"
+                          />
+                        </figure>
+                      </div>
+                      <h2 class="product__item--heading">
+                        <a href="./product-page.html">
+                          Coffee Beans - Espresso Arabica and Robusta Beans
+                        </a>
+                      </h2>
+                      <span class="product__item--brand">Lavazza</span>
+                      <div class="product__item--footer">
+                        <span class="product__item--price">$47.00</span>
+                        <img
+                          src="./assets/icons/product-icon-star.svg"
+                          alt="icon-star"
+                          class="product__item--star"
+                        />
+                        <span class="product__item--rating">4.3</span>
+                      </div>
+                    </article>
+                  </div>
+                  <!-- product-06 -->
+                  <div class="col">
+                    <article class="product__item">
+                      <div class="product__item--thumb">
+                        <figure class="product__item--photo">
+                          <a
+                            href="./product-page.html"
+                            class="product__item--link"
+                          >
+                            <img
+                              src="./assets/img/product-item/pro-02.png"
+                              alt="product-photo"
+                            />
+                          </a>
+                        </figure>
+                        <figure class="product__item--icon heart__btn">
+                          <img
+                            src="./assets/icons/product-icon-heart.svg"
+                            alt="icon-heart"
+                            class="icon heart__btn--icon"
+                          />
+                          <img
+                            src="./assets/icons/heart-red.svg"
+                            alt="icon-heart-red"
+                            class="heart__btn--red"
+                          />
+                        </figure>
+                      </div>
+                      <h2 class="product__item--heading">
+                        <a href="./product-page.html">
+                          Lavazza Coffee Blends - Try the Italian Espresso
+                        </a>
+                      </h2>
+                      <span class="product__item--brand">Lavazza</span>
+                      <div class="product__item--footer">
+                        <span class="product__item--price">$53.00</span>
+                        <img
+                          src="./assets/icons/product-icon-star.svg"
+                          alt="icon-star"
+                          class="product__item--star"
+                        />
+                        <span class="product__item--rating">3.4</span>
+                      </div>
+                    </article>
+                  </div>
+                  <!-- product-07 -->
+                  <div class="col">
+                    <article class="product__item">
+                      <div class="product__item--thumb">
+                        <figure class="product__item--photo">
+                          <a
+                            href="./product-page.html"
+                            class="product__item--link"
+                          >
+                            <img
+                              src="./assets/img/product-item/pro-03.png"
+                              alt="product-photo"
+                            />
+                          </a>
+                        </figure>
+                        <figure class="product__item--icon heart__btn">
+                          <img
+                            src="./assets/icons/product-icon-heart.svg"
+                            alt="icon-heart"
+                            class="icon heart__btn--icon"
+                          />
+                          <img
+                            src="./assets/icons/heart-red.svg"
+                            alt="icon-heart-red"
+                            class="heart__btn--red"
+                          />
+                        </figure>
+                      </div>
+                      <h2 class="product__item--heading">
+                        <a href="./product-page.html">
+                          Lavazza - Caffè Espresso Black Tin - Ground coffee
+                        </a>
+                      </h2>
+                      <span class="product__item--brand">welikecoffee</span>
+                      <div class="product__item--footer">
+                        <span class="product__item--price">$99.99</span>
+                        <img
+                          src="./assets/icons/product-icon-star.svg"
+                          alt="icon-star"
+                          class="product__item--star"
+                        />
+                        <span class="product__item--rating">5.0</span>
+                      </div>
+                    </article>
+                  </div>
+                  <!-- product-08 -->
+                  <div class="col">
+                    <article class="product__item">
+                      <div class="product__item--thumb">
+                        <figure class="product__item--photo">
+                          <a
+                            href="./product-page.html"
+                            class="product__item--link"
+                          >
+                            <img
+                              src="./assets/img/product-item/pro-04.png"
+                              alt="product-photo"
+                            />
+                          </a>
+                        </figure>
+                        <figure class="product__item--icon heart__btn">
+                          <img
+                            src="./assets/icons/product-icon-heart.svg"
+                            alt="icon-heart"
+                            class="icon heart__btn--icon"
+                          />
+                          <img
+                            src="./assets/icons/heart-red.svg"
+                            alt="icon-heart-red"
+                            class="heart__btn--red"
+                          />
+                        </figure>
+                      </div>
+                      <h2 class="product__item--heading">
+                        <a href="./product-page.html">
+                          Qualità Oro Mountain Grown - Espresso Coffee Beans
+                        </a>
+                      </h2>
+                      <span class="product__item--brand">Lavazza</span>
+                      <div class="product__item--footer">
+                        <span class="product__item--price">$38.65</span>
+                        <img
+                          src="./assets/icons/product-icon-star.svg"
+                          alt="icon-star"
+                          class="product__item--star"
+                        />
+                        <span class="product__item--rating">4.4</span>
+                      </div>
+                    </article>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
     <!-- footer -->
     <footer id="footer" class="footer"></footer>
     <script>
