@@ -66,7 +66,7 @@
           <ul class="breadcrumbs checkout--breadcrumbs">
             <li>
               <a href="./index-logined.html" class="breadcrumbs__title">
-                Departments
+                Home
                 <img src="./assets/icons/arrow-right.svg" alt="icon" />
               </a>
             </li>
@@ -80,7 +80,7 @@
             </li>
           </ul>
         </div>
-        <!-- checkout-product -->
+        <!-- checkout-container -->
         <div class="checkout-container">
           <div class="row row-cols-2">
             <!-- group-left -->
@@ -320,16 +320,18 @@
                       Continue Shopping
                     </a>
                     <div class="cart__item__group-price">
-                      <div class="cart__item__price">
+                      <div class="cart__item__total-price">
                         <span>Subtotal</span>
                         <span>$191.65</span>
                       </div>
-                      <div class="cart__item__price">
+                      <div class="cart__item__total-price">
                         <span>Shipping</span>
                         <span>$10.00</span>
                       </div>
                       <div class="cart__separate cart__separate--small"></div>
-                      <div class="cart__item__price cart__item__price--bold">
+                      <div
+                        class="cart__item__total-price cart__item__total-price--bold"
+                      >
                         <span>Total</span>
                         <span>$201.65</span>
                       </div>
@@ -340,7 +342,7 @@
             </div>
             <!-- group-right -->
             <div class="col col-4 col-xl-12">
-              <!-- group-price -->
+              <!-- cart-price -->
               <div class="cart-price">
                 <div class="cart-price__row">
                   <span class="cart-price__desc">Subtotal (items)</span>
@@ -354,9 +356,7 @@
                   <span class="cart-price__desc">Shipping</span>
                   <span class="cart-price__number">$10.00</span>
                 </div>
-                <div
-                  class="cart-price__row checkout-prod__item__separate"
-                ></div>
+                <div class="cart-price__row cart__separate"></div>
                 <div class="cart-price__row">
                   <span class="cart-price__desc">Estimated Total</span>
                   <span class="cart-price__number">$201.65</span>
@@ -367,7 +367,7 @@
                   >Continue to checkout</a
                 >
               </div>
-              <!-- group-gift -->
+              <!-- cart-gift -->
               <div class="cart-gift">
                 <div class="cart-gift__icon">
                   <img src="./assets/icons/gift.svg" alt="icon" />
@@ -390,7 +390,7 @@
       load("#footer", "./template/footer.html");
     </script>
     <!-- Modal: confirm remove shoping cart item -->
-    <div id="modal" class="modal modal-small hide">
+    <div id="modal" class="modal modal--small hide">
       <div class="modal-content">
         <p class="modal-content__desc">
           Do you want to remove this item from shopping cart?

@@ -1,0 +1,141 @@
+@use "../abstract";
+
+.cart-group {
+  padding: 30px;
+  @include abstract.breakpoints(sm) {
+    padding: 20px;
+  }
+}
+
+.cart-product {
+  & + & {
+    margin-top: 30px;
+    @include abstract.breakpoints(sm) {
+      margin-top: 20px;
+    }
+  }
+}
+.payment-cart {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background: var(--bg-payment-cart);
+  padding: 20px;
+  margin-top: 30px;
+  &__inline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__heading {
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.46;
+    padding: 0;
+    &--margin-bottom {
+      margin-bottom: 30px;
+    }
+  }
+  &__edit-button {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.44;
+    color: inherit;
+    margin-left: auto;
+  }
+  &__info-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.44;
+  }
+  &__infor-desc {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.47;
+    margin-top: 5px;
+  }
+  &__photo {
+    width: 70px;
+    aspect-ratio: 70 / 54;
+    margin-right: 20px;
+    @include abstract.breakpoints(sm) {
+      align-self: flex-start;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__detail {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.47;
+    margin-left: auto;
+    color: #0071dc;
+  }
+  &__info {
+    margin-left: 0;
+  }
+  &__edit {
+    margin-left: auto;
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.3;
+    @include abstract.breakpoints(sm) {
+      align-self: flex-start;
+      margin-left: 0;
+    }
+  }
+  &__sticked {
+    margin-left: 10px;
+  }
+  &--hover {
+    cursor: pointer;
+  }
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.44;
+    margin-top: 30px;
+  }
+  &__group-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    @include abstract.breakpoints(sm) {
+      flex-direction: column;
+      row-gap: 16px;
+      align-items: flex-start;
+    }
+  }
+}
+
+.payment-detail {
+  &__desc {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.47;
+    margin-top: 6px;
+  }
+  &__group {
+    margin-top: 30px;
+    &--margin-bottom {
+      margin-bottom: 30px;
+    }
+  }
+  &__label {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.44;
+    margin-bottom: 20px;
+  }
+  &__icon {
+    top: 55px;
+  }
+  &__input {
+    width: 100%;
+  }
+}

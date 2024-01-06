@@ -53,9 +53,6 @@
 }
 
 // button
-[class^="btn"] {
-  cursor: pointer;
-}
 .btn {
   display: flex;
   align-items: center;
@@ -63,6 +60,7 @@
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.5;
+  cursor: pointer;
 }
 .btn--text {
   color: var(--color-text-btn);
@@ -76,10 +74,13 @@
 }
 
 .btn--primary {
-  padding: 10 20px;
+  padding: 10px 20px;
   border-radius: 6px;
   background: #ffb700;
   color: #1a162e;
+  &:hover {
+    background-color: rgba(255, 183, 0, 0.8);
+  }
 }
 
 .btn--radius {

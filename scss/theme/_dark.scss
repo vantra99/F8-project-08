@@ -63,14 +63,18 @@ html.dark {
 
   // product-page
   --bg-product: #292e39;
-  --bg-breadcrumbs: #171c28;
-  --shadow-breadcrumbs: rgba(23, 28, 40, 0.2);
   --bg-product-info: var(--bg-breadcrumbs);
   --bg-tag-prod-info: #292e39;
-  --bg-search-bar: var(--bg-breadcrumbs);
-  --color-placeholder-search-bar: #b9babe;
 
   --bg-review: #171c28;
+
+  // serch-bar
+  --bg-search-bar: #171c28;
+  --color-placeholder-search-bar: #b9babe;
+
+  //breadcrumbs
+  --bg-breadcrumbs: #171c28;
+  --shadow-breadcrumbs: rgba(23, 28, 40, 0.2);
 
   // action-dropdown
   --bg-action-dropdown: #363d4b;
@@ -90,4 +94,21 @@ html.dark {
 
   // modal
   --bg-modal: #292e39;
+
+  // sticked--btn
+  --border-color-sticked: #fff;
+
+  // dialog
+  --bg-dialog: #2f3441;
+
+  // payment
+  --bg-payment-cart: #292e39;
+
+  // profile
+  --bg-block: #171c28;
+  --shadow-block: rgba(23, 28, 40, 0.2);
+  --bg-account-info: #292e39;
+  --color-text-account-info: #b9babe;
+  --bg-account-info-icon: #171c28;
+  --bg-hover-profile-menu-item: #292e39;
 }

@@ -1,89 +1,81 @@
+/* LATO */
 @font-face {
-  font-family: "Gordita";
-  src: url("/assets/font/Gordita-Black.woff2") format("woff2"),
-    url("/assets/font/Gordita-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Gordita";
-  src: url("/assets/font/Gordita-Bold.woff2") format("woff2"),
-    url("/assets/font/Gordita-Bold.woff") format("woff");
+  font-family: "Lato";
+  src: url("./assets/font/Lato-Bold.woff2") format("woff2"),
+    url("./assets/font/Lato-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Gordita";
-  src: url("/assets/font/Gordita-BlackItalic.woff2") format("woff2"),
-    url("/assets/font/Gordita-BlackItalic.woff") format("woff");
+  font-family: "Lato Hairline";
+  src: url("./assets/font/Lato-Hairline.woff2") format("woff2"),
+    url("./assets/font/Lato-Hairline.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/font/Lato-Black.woff2") format("woff2"),
+    url("./assets/font/Lato-Black.woff") format("woff");
   font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Gordita";
-  src: url("/assets/font/Gordita-Light.woff2") format("woff2"),
-    url("/assets/font/Gordita-Light.woff") format("woff");
-  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Gordita";
-  src: url("/assets/font/Gordita-BoldItalic.woff2") format("woff2"),
-    url("/assets/font/Gordita-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Gordita";
-  src: url("/assets/font/Gordita-LightItalic.woff2") format("woff2"),
-    url("/assets/font/Gordita-LightItalic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Gordita";
-  src: url("/assets/font/Gordita-Medium.woff2") format("woff2"),
-    url("/assets/font/Gordita-Medium.woff") format("woff");
-  font-weight: 500;
+  font-family: "Lato";
+  src: url("./assets/font/Lato-Heavy.woff2") format("woff2"),
+    url("./assets/font/Lato-Heavy.woff") format("woff");
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Gordita";
-  src: url("/assets/font/Gordita-MediumItalic.woff2") format("woff2"),
-    url("/assets/font/Gordita-MediumItalic.woff") format("woff");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Gordita";
-  src: url("/assets/font/Gordita-Regular.woff2") format("woff2"),
-    url("/assets/font/Gordita-Regular.woff") format("woff");
+  font-family: "Lato";
+  src: url("./assets/font/Lato-Regular.woff2") format("woff2"),
+    url("./assets/font/Lato-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Gordita";
-  src: url("/assets/font/Gordita-Italic.woff2") format("woff2"),
-    url("/assets/font/Gordita-Italic.woff") format("woff");
+  font-family: "Lato";
+  src: url("./assets/font/Lato-Medium.woff2") format("woff2"),
+    url("./assets/font/Lato-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/font/Lato-Italic.woff2") format("woff2"),
+    url("./assets/font/Lato-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/font/Lato-Light.woff2") format("woff2"),
+    url("./assets/font/Lato-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/font/Lato-Thin.woff2") format("woff2"),
+    url("./assets/font/Lato-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
   font-display: swap;
 }

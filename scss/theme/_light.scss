@@ -60,17 +60,21 @@ html.light {
   @include abstract.breakpoints(sm) {
     --bg-product: #f9f9fc;
   }
+  --bg-product-info: var(--bg-breadcrumbs);
+  --bg-tag-prod-info: #ededf6;
+
+  --bg-review: #fafafd;
+
+  // Search-bar
+  --bg-search-bar: #fff;
+  --color-placeholder-search-bar: #9e9da8;
+
+  // breadcrumbs
   --bg-breadcrumbs: #f6f6f6;
   @include abstract.breakpoints(sm) {
     --bg-breadcrumbs: #fff;
   }
   --shadow-breadcrumbs: rgba(237, 237, 246, 0.2);
-  --bg-product-info: var(--bg-breadcrumbs);
-  --bg-tag-prod-info: #ededf6;
-  --bg-search-bar: var(--bg-breadcrumbs);
-  --color-placeholder-search-bar: #9e9da8;
-
-  --bg-review: #fafafd;
 
   // action-dropdown
   --bg-action-dropdown: #fff;
@@ -93,4 +97,21 @@ html.light {
 
   // modal
   --bg-modal: #f6f6f6;
+
+  // sticked--btn
+  --border-color-sticked: #000;
+
+  // dialog
+  --bg-dialog: #fff;
+
+  // payment
+  --bg-payment-cart: #f6f6f6;
+
+  // profile
+  --bg-block: #fff;
+  --shadow-block: rgba(237, 237, 246, 0.2);
+  --bg-account-info: #f6f6f6;
+  --color-text-account-info: #1a162e;
+  --bg-account-info-icon: #fff;
+  --bg-hover-profile-menu-item: #ebebeb;
 }

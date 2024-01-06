@@ -1,0 +1,33 @@
+@use "../abstract";
+.new-card {
+  &__heading {
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.46;
+    a {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+  }
+  &__form,
+  &__checkbox,
+  &__button {
+    margin-top: 30px;
+    @include abstract.breakpoints(md) {
+      margin-top: 15px;
+    }
+  }
+  &__label-checkbox {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    a {
+      margin-left: auto;
+    }
+  }
+}

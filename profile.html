@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | Grocery Mart</title>
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- font -->
+    <link rel="stylesheet" href="./assets/font/stylesheet.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- Javascripts -->
+    <script src="./assets/js/scripts.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header id="header-logined" class="header"></header>
+    <script>
+      load("#header-logined", "./template/header-logined.html");
+    </script>
+    <!-- main -->
+    <main class="profile">
+      <div class="container">
+        <!-- search-bar -->
+        <div class="profile-container">
+          <div class="search-bar d-none d-md-flex">
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Search for item"
+              class="search-bar__input"
+            />
+            <button type="submit" class="search-bar__btn">
+              <img src="./assets/icons/search.svg" alt="icon" class="icon" />
+            </button>
+          </div>
+        </div>
+        <!-- profile-container -->
+        <div class="profile-container">
+          <div class="row row-cols-2 row-cols-sm-1">
+            <!-- group-left -->
+            <div class="col-3 col-xl-4 col-lg-5 col-md-12">
+              <div class="profile__sidebar">
+                <!-- profile-user -->
+                <div class="profile__user">
+                  <figure class="profile__user__avarta">
+                    <img src="./assets/img/user-avarta.jpg" alt="avarta" />
+                  </figure>
+                  <h1 class="profile__user__name">Imran Khan</h1>
+                  <p class="profile__user__registered">
+                    Registered: 17th May 2022
+                  </p>
+                </div>
+                <!-- menu-01 -->
+                <div class="profile__menu">
+                  <h3 class="profile__menu__heading">Manage Account</h3>
+                  <ul class="profile__menu__list">
+                    <li>
+                      <a
+                        href="./edit-personal-info.html"
+                        class="profile__menu__item"
+                      >
+                        <div class="profile__menu__icon">
+                          <img
+                            src="./assets/icons/icon-personal.svg"
+                            alt="icon"
+                            class="icon"
+                          />
+                        </div>
+                        Personal info
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#!" class="profile__menu__item">
+                        <div class="profile__menu__icon">
+                          <img
+                            src="./assets/icons/icon-address.svg"
+                            alt="icon"
+                            class="icon"
+                          />
+                        </div>
+                        Addresses
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#!" class="profile__menu__item">
+                        <div class="profile__menu__icon">
+                          <img
+                            src="./assets/icons/icon-communication.svg"
+                            alt="icon"
+                            class="icon"
+                          />
+                        </div>
+                        Communications & privacy
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- menu-02 -->
+                <div class="profile__menu">
+                  <h3 class="profile__menu__heading">My items</h3>
+                  <ul class="profile__menu__list">
+                    <li>
+                      <a href="#!" class="profile__menu__item">
+                        <div class="profile__menu__icon">
+                          <img
+                            src="./assets/icons/icon-reoder.svg"
+                            alt="icon"
+                            class="icon"
+                          />
+                        </div>
+                        Reorder
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./favourite.html" class="profile__menu__item">
+                        <div class="profile__menu__icon">
+                          <img
+                            src="./assets/icons/product-icon-heart.svg"
+                            alt="icon"
+                            class="icon"
+                          />
+                        </div>
+                        Lists
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#!" class="profile__menu__item">
+                        <div class="profile__menu__icon">
+                          <img
+                            src="./assets/icons/icon-register.svg"
+                            alt="icon"
+                            class="icon"
+                          />
+                        </div>
+                        Registries
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- menu-03 -->
+                <div class="profile__menu">
+                  <h3 class="profile__menu__heading">Subscriptions & plans</h3>
+                  <ul class="profile__menu__list">
+                    <li>
+                      <a href="#!" class="profile__menu__item">
+                        <div class="profile__menu__icon">
+                          <img
+                            src="./assets/icons/icon-protect.svg"
+                            alt="icon"
+                            class="icon"
+                          />
+                        </div>
+                        Protection plans
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- menu-04 -->
+                <div class="profile__menu">
+                  <h3 class="profile__menu__heading">Customer Service</h3>
+                  <ul class="profile__menu__list">
+                    <li>
+                      <a href="#!" class="profile__menu__item">
+                        <div class="profile__menu__icon">
+                          <img
+                            src="./assets/icons/icon-help.svg"
+                            alt="icon"
+                            class="icon"
+                          />
+                        </div>
+                        Help
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#!" class="profile__menu__item">
+                        <div class="profile__menu__icon">
+                          <img
+                            src="./assets/icons/icon-terms.svg"
+                            alt="icon"
+                            class="icon"
+                          />
+                        </div>
+                        Terms of Use
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- group-right -->
+            <div class="col-9 col-xl-8 col-lg-7 col-md-12">
+              <div class="cart-info">
+                <div class="row gy-3 gy-sm-2">
+                  <div class="col-12">
+                    <h1 class="cart-info__heading">My Wallet</h1>
+                    <p class="cart-info__desc">Payment methods</p>
+                    <div
+                      class="row row-cols-3 gy-3 row-cols-xl-2 row-cols-lg-1 gy-md-2"
+                    >
+                      <!-- card-payment-01 -->
+                      <article class="col">
+                        <div class="card-payment" style="--color-card: #1e2e69">
+                          <img
+                            src="./assets/img/cart/photo-card-01.png "
+                            alt="card-photo"
+                            class="card-payment__photo"
+                          />
+                          <div class="card-payment__top">
+                            <img
+                              src="./assets/icons/icon-plane.svg"
+                              alt="card-icon"
+                              class="card-payment__icon"
+                            />
+                            <span class="card-payment__type">FeatherCard</span>
+                          </div>
+                          <div class="card-payment__number">
+                            <span>1234 4567 8901 2221</span>
+                          </div>
+                          <div class="card-payment__bottom">
+                            <div class="card-payment__holder">
+                              <p class="card-payment__label">Card Holder</p>
+                              <p class="card-payment__value">Imran Khan</p>
+                            </div>
+                            <div class="card-payment__expired">
+                              <p class="card-payment__label">Expired</p>
+                              <p class="card-payment__value">10/22</p>
+                            </div>
+                            <div class="card-payment__circle"></div>
+                          </div>
+                        </div>
+                      </article>
+                      <!-- card-payment-02 -->
+                      <div class="col">
+                        <article
+                          class="card-payment"
+                          style="--color-card: #354151"
+                        >
+                          <img
+                            src="./assets/img/cart/photo-card-02.png "
+                            alt="card-photo"
+                            class="card-payment__photo"
+                          />
+                          <div class="card-payment__top">
+                            <img
+                              src="./assets/icons/icon-card-payment.svg"
+                              alt="card-icon"
+                              class="card-payment__icon"
+                            />
+                            <span class="card-payment__type">FeatherCard</span>
+                          </div>
+                          <div class="card-payment__number">
+                            <span>1234 4567 8901 2221</span>
+                          </div>
+                          <div class="card-payment__bottom">
+                            <div class="card-payment__holder">
+                              <p class="card-payment__label">Card Holder</p>
+                              <p class="card-payment__value">Imran Khan</p>
+                            </div>
+                            <div class="card-payment__expired">
+                              <p class="card-payment__label">Expired</p>
+                              <p class="card-payment__value">11/22</p>
+                            </div>
+                            <div class="card-payment__circle"></div>
+                          </div>
+                        </article>
+                      </div>
+                      <!-- card-payment-03 -->
+                      <div class="col">
+                        <a href="./add-new-card.html" class="card-new">
+                          <div class="card-new__icon">
+                            <img
+                              src="./assets/icons/icon-add.svg"
+                              alt="icon-card-new"
+                              class="icon"
+                            />
+                          </div>
+                          <p class="card-new__text">Add New Card</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <h1 class="cart-info__heading">Account info</h1>
+                    <p class="cart-info__desc">
+                      Addresses, contact information and password
+                    </p>
+                    <div class="row row-cols-2 gy-3 row-cols-lg-1 gy-md-2">
+                      <!-- account-info-01 -->
+                      <div class="col-6">
+                        <a href="./edit-personal-info.html">
+                          <article class="account-info">
+                            <div class="account-info__icon">
+                              <img
+                                src="./assets/icons/icon-communication.svg"
+                                alt="icon"
+                                class="icon"
+                              />
+                            </div>
+                            <div>
+                              <h3 class="account-info__title">Email Address</h3>
+                              <p class="account-info__desc">
+                                tarek97.ta@gmail.com
+                              </p>
+                            </div>
+                          </article>
+                        </a>
+                      </div>
+                      <!-- account-info-02 -->
+                      <div class="col-6">
+                        <a href="./edit-personal-info.html">
+                          <article class="account-info">
+                            <div class="account-info__icon">
+                              <img
+                                src="./assets/icons/icon-calling.svg"
+                                alt="icon"
+                                class="icon"
+                              />
+                            </div>
+                            <div>
+                              <h3 class="account-info__title">Phone number</h3>
+                              <p class="account-info__desc">
+                                +000 11122 2345 657
+                              </p>
+                            </div>
+                          </article>
+                        </a>
+                      </div>
+                      <!-- account-info-03 -->
+                      <div class="col-6">
+                        <a href="./edit-personal-info.html">
+                          <article class="account-info">
+                            <div class="account-info__icon">
+                              <img
+                                src="./assets/icons/icon-address.svg"
+                                alt="icon"
+                                class="icon"
+                              />
+                            </div>
+                            <div>
+                              <h3 class="account-info__title">
+                                Add an address
+                              </h3>
+                              <p class="account-info__desc">
+                                Bangladesh Embassy, Washington, DC 20008
+                              </p>
+                            </div>
+                          </article>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <h1 class="cart-info__heading">Lists</h1>
+                    <p class="cart-info__desc">2 items - Primary</p>
+                    <!-- favourite-item-01 -->
+                    <article class="favourite-item">
+                      <figure class="favourite-item__thumb">
+                        <img
+                          src="./assets/img/product-item/pro-01.png"
+                          alt="favourite-photo"
+                        />
+                      </figure>
+                      <div class="favourite-item__info">
+                        <h3 class="favourite-item__heading">
+                          Coffee Beans - Espresso Arabica and Robusta Beans
+                        </h3>
+                        <div class="favourite-item__content">
+                          <span class="favourite-item__price">$47.00</span>
+                          <button
+                            class="btn btn--primary btn--radius favourite-item__button"
+                          >
+                            Add to cart
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+
+                    <div class="separate" style="--margin: 20px"></div>
+
+                    <!-- favourite-item-02 -->
+                    <article class="favourite-item">
+                      <figure class="favourite-item__thumb">
+                        <img
+                          src="./assets/img/product-item/pro-02.png"
+                          alt="favourite-photo"
+                        />
+                      </figure>
+                      <div class="favourite-item__info">
+                        <h3 class="favourite-item__heading">
+                          Lavazza Coffee Blends - Try the Italian Espresso
+                        </h3>
+                        <div class="favourite-item__content">
+                          <span class="favourite-item__price">$53.00</span>
+                          <button
+                            class="btn btn--primary btn--radius favourite-item__button"
+                          >
+                            Add to cart
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer id="footer" class="footer"></footer>
+    <script>
+      load("#footer", "./template/footer.html");
+    </script>
+  </body>
+</html>

@@ -179,7 +179,6 @@
       }
     }
     &__icon {
-      margin-top: 5px;
       @include abstract.breakpoints(lg) {
         filter: var(--icon-sidebar-dark);
         margin-right: 10px;
@@ -191,7 +190,26 @@
     }
   }
 }
+.theme {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  margin-left: auto;
+  margin-right: 15px;
+  height: var(--heght-navbar);
 
+  &:hover {
+    cursor: pointer;
+  }
+  &__name {
+    font-weight: 500;
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+  }
+}
 .action {
   margin-left: auto;
   gap: 20px;
@@ -241,8 +259,12 @@
     }
   }
   &__user {
+    position: relative;
     width: 50px;
     height: 50px;
+    &:hover .action-dropdown {
+      display: block;
+    }
     &--avarta {
       width: 100%;
       height: 100%;
@@ -257,5 +279,58 @@
     @include abstract.breakpoints(md) {
       padding: 5px 15px;
     }
+  }
+}
+
+.action-dropdown {
+  &__user {
+    right: 0;
+  }
+  &__arrow__user {
+    right: 14px;
+  }
+  &__inner__user {
+    width: min(300px, 100vw);
+  }
+}
+
+.menu-user {
+  font-weight: 500;
+  &__top {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+  &__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    outline: 2px solid #77dae6;
+    outline-offset: 3px;
+  }
+  &__mail {
+    margin-top: 5px;
+  }
+  &__list {
+    margin-top: 10px;
+  }
+  &__item__inline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__item__separate {
+    border-top: 1px solid #77dae6;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  &__item__link {
+    display: block;
+    height: inherit;
+    padding: 10px 0;
   }
 }
